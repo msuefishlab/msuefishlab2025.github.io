@@ -1,47 +1,29 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- name: Fieldwork
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  link: projects/fieldwork.html
+  image: images/iboundji.jpg
+  description: We have ongoing projects to survey the diversity of macroinvertebrates and electric fish from various streams throughout Gabon, West-Central Africa.
 
-- title: Cool Package
-  subtitle: a subtitle
+- name: Evolution and Development of Electric Organs
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  image: images/evodevo.png
+  link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
+  description: Electric organs have evolved from skeletal muscle or skeletal-muscle precursors more than six times within vertebrates.  What are the genetic and transcriptional changes needed to evolve electric organs?
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
+- name: Genomic, Transcriptomic and Functional Tools
+  group: featured
+  image: images/efishbros.png
+  link: https://efishgenomics.integrativebiology.msu.edu
+  description: We build tools to enable genotype-to-phenotype studies in weakly electric fish.  Check out all of our datasets and tools at our sister site!
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+- name: Evolution of Electric Signal Diversity
+  group: featured
+  image: images/paramormyrops.png
+  link: /projects/picqetal2020.pdf
+  description: What are the proximate and ultimate causes of electric signal evolution within mormyrid electric fish?
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+- name: Electric Fish Reproduction
+  group: featured
+  image: images/spawn.png
+  link: images/koenigandgallant2021.pdf
+  description: Our newest set of projects focuses on the unusual reproduction of mormyrid fish, and their mechanisms of sex determination.  Stay tuned!

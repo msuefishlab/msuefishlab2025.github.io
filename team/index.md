@@ -5,31 +5,24 @@ nav:
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# <i class="fas fa-users"></i>Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The MSU Electric Fish Lab values curiosity about the natural world, independent inquiry, critical thinking, science literacy, and accessible, open science, as well as strong prioritization of mentorship at all career levels. Since opening in 2013, we've built a large and productive lab group with many talented students, postdocs, and technicians from around the world, including Canada, Costa Rica, France, England and the US. Many of our students come from diverse economic backgrounds, and groups typically underrepresented in STEM fields. A particular point of pride is our outstanding group of undergraduates, many of whom have gone on to pursue graduate research positions at other institutions.
 
-{% include section.html %}
+{% include list.html data="members" component="portrait" filters="role: pi, group: " %}
+{% include list.html data="members" component="portrait" filters="role: technician, group: " %}
+{% include list.html data="members" component="portrait" filters="role: postdoc, group: " %}
+{% include list.html data="members" component="portrait" filters="role: phd, group: " %}
+{% include list.html data="members" component="portrait" filters="role: undergrad, group: " %}
+{% include list.html data="members" component="portrait" filters="role: programmer, group: " %}
+{:.center}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+# <i class="fas fa-users"></i>Alumni
 
-{% include section.html background="images/background.jpg" dark=true %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+{% include list.html data="members" component="portrait" filters="role: pi, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: technician, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: postdoc, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: phd, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: undergrad, group: alumni" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: programmer, group: alumni" style="small" %}
+{:.center}
