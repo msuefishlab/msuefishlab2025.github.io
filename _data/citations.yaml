@@ -10,8 +10,13 @@
   date: '2025-06-01'
   link: https://doi.org/g9xfc5
   orcid: 0000-0002-6528-090X
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/228/11/10.1242_jeb.249548/1/jeb24954803.png?Expires=1758205429&Signature=nBUClhBiSnEOtZpuRN-0Tjg0N1azfyk18Y9FF8n1Nsz4as7ZQRcTVoWEoWJ8LjwJNzdl~okIyJm5RFoLuHRwC54IwubofXnVTfpkagkPPVp4nNK3~4Z~~mHUUoXFu7DsHMiYoHhsq6i3zG0KI2xxA-EiFyk0vXEi0QfAKCbyRf80JdGVV7RvH66uV9SQ1EbLdFHNKCoJxY5AfI0i~yV5DMhMeFLXltg-gSrF6tMSU7Ukvs3Av48uZTO0gYTFH74HM1UmK5ru3tF~wOyuSbljJegXtlLjU0bD5X4MD6mGrSaamVAB4Ny54~O0zwqCjsM5VydCPt7hInkD5foH69NdSg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
+  tags:
+  - Transcriptome
+  - Reproduction
+  - Signal Evolution
 - id: doi:10.1101/2024.09.02.610879
   title: Mechanistic insights into gene expression changes and electric organ discharge
     elongation in mormyrid electric fish
@@ -457,23 +462,7 @@
   extra-links:
   - type: pdf
     link: images/gallant_etal_2011.pdf
-- id: 10.1242/jeb.249548
-  title: Gene expression correlates and mechanistic insights into electric organ discharge
-    duration changes in mormyrid electric fish
-  authors:
-  - Mauricio Losilla
-  - Jason R. Gallant
-  publisher: Journal of Experimental Biology
-  date: '2025-06-01'
-  link: https://doi.org/g9xfc5
-  image: https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/228/11/10.1242_jeb.249548/1/jeb24954803.png?Expires=1758205429&Signature=nBUClhBiSnEOtZpuRN-0Tjg0N1azfyk18Y9FF8n1Nsz4as7ZQRcTVoWEoWJ8LjwJNzdl~okIyJm5RFoLuHRwC54IwubofXnVTfpkagkPPVp4nNK3~4Z~~mHUUoXFu7DsHMiYoHhsq6i3zG0KI2xxA-EiFyk0vXEi0QfAKCbyRf80JdGVV7RvH66uV9SQ1EbLdFHNKCoJxY5AfI0i~yV5DMhMeFLXltg-gSrF6tMSU7Ukvs3Av48uZTO0gYTFH74HM1UmK5ru3tF~wOyuSbljJegXtlLjU0bD5X4MD6mGrSaamVAB4Ny54~O0zwqCjsM5VydCPt7hInkD5foH69NdSg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
-  tags:
-  - Transcriptome
-  - Reproduction
-  - Signal Evolution
-  plugin: sources.py
-  file: sources.yaml
-- id: 10.1002/jez.b.23242
+- id: doi:10.1002/jez.b.23242
   title: "A review of the reproductive biology of mormyroid\_fishes: An emerging model\
     \ for biomedical research"
   authors:
@@ -488,7 +477,7 @@
   - Reproduction
   plugin: sources.py
   file: sources.yaml
-- id: 10.1016/j.cub.2023.11.062
+- id: doi:10.1016/j.cub.2023.11.062
   title: Timing and precision of rattlesnake spinal motoneurons are determined by
     the KV72/3 potassium channel
   authors:
