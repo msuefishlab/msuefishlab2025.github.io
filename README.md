@@ -5,6 +5,6 @@
 
   # msuefishlab's Website
 
-  Visit **[efish.integrativebiology.msu.edu/msuefishlab2025.github.io](http://efish.integrativebiology.msu.edu/msuefishlab2025.github.io)** 🚀
+  Visit **[efish.integrativebiology.msu.edu](https://efish.integrativebiology.msu.edu)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
