@@ -1,10 +1,10 @@
-{% comment %}
-  see content.html
-{% endcomment %}
-
 <!-- section break -->
-<!--
-  <background>{{ include.background }}</background>
-  <dark>{{ include.dark }}</dark>
-  <size>{{ include.size }}</size>
--->
+{%- if include.background -%}
+  <!-- section background {{ include.background }} -->
+{%- endif -%}
+{%- if include.dark == true -%}
+  <!-- section dark -->
+{%- endif -%}
+{%- if include.full == true -%}
+  <!-- section full -->
+{%- endif -%}
