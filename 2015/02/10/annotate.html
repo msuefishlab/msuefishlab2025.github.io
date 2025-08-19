@@ -66,10 +66,10 @@
 
   <meta name="author" content="Jason Gallant">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2025-08-19T21:49:21+00:00">
+  <meta property="og:updated_time" content="2025-08-19T22:48:59+00:00">
   <meta property="article:published_time" content="2015-02-10T19:52:40+00:00">
-  <meta property="article:modified_time" content="2025-08-19T21:49:21+00:00">
-  <meta name="revised" content="2025-08-19T21:49:21+00:00">
+  <meta property="article:modified_time" content="2025-08-19T22:48:59+00:00">
+  <meta name="revised" content="2025-08-19T22:48:59+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Running MAKER Genome Annotation on STARCLUSTER" },
       "datePublished": "2015-02-10T19:52:40+00:00",
-      "dateModified": "2025-08-19T21:49:21+00:00",
+      "dateModified": "2025-08-19T22:48:59+00:00",
     
     "name": "Running MAKER Genome Annotation on STARCLUSTER",
     "description": "An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
@@ -414,8 +414,14 @@
   
   
 
-  <section class="background" data-size="page">
-    <h1 class="center">Running MAKER Genome Annotation on STARCLUSTER</h1>
+  <section class="background" data-size="1">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size>1</size>
+-->
+
+<h1 class="center">Running MAKER Genome Annotation on STARCLUSTER</h1>
 
 <div class="post-info">
   
@@ -467,7 +473,13 @@
   
 
   <section class="background" data-size="page">
-    <p>I’ve been running an experiment trying to implement AWS in some of our bioinformatics projects.  After surveying some nice reviews (Yandell and Ence, 2012), I’ve decided on the MAKER pipeline to get things started.  The basic approach will be to take orthologous proteins from other organisms, together with existing transcriptome data (assembled by cufflinks), and use this as a means of pulling out putative coding regions to train an ab-inito gene predictor (such as SNAP or Augustus) to build gene models.  Given the numerous BLAST steps that are involved in aligning this data, as well as processing it, the folks in the Yandell lab made MAKER parallel, through the use of either OpenMPI or MPICH2.  Although we have an installation of the MAKER software on campus, it hasn’t been updated in a while, and there is something of a queue run very long jobs with lots of processors– I wondered if there were other options.</p>
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<p>I’ve been running an experiment trying to implement AWS in some of our bioinformatics projects.  After surveying some nice reviews (Yandell and Ence, 2012), I’ve decided on the MAKER pipeline to get things started.  The basic approach will be to take orthologous proteins from other organisms, together with existing transcriptome data (assembled by cufflinks), and use this as a means of pulling out putative coding regions to train an ab-inito gene predictor (such as SNAP or Augustus) to build gene models.  Given the numerous BLAST steps that are involved in aligning this data, as well as processing it, the folks in the Yandell lab made MAKER parallel, through the use of either OpenMPI or MPICH2.  Although we have an installation of the MAKER software on campus, it hasn’t been updated in a while, and there is something of a queue run very long jobs with lots of processors– I wondered if there were other options.</p>
 
 <p>Many folks have touted the virtues of using Amazon Web Services (AWS) for bioinformatics (e.g. here)– it is great for making portable machines for bioinformatics analysis.  For the uninitiated, AWS ‘leases’ computing time to anyone with a credit card for the purposes of data crunching.  It’s tremendously handy, but bioinformaticians typically deploy only one machine for their analysis– not very handy for taking advantage of the MPI capabilities of MAKER.    Certainly,  someone with a strong background in computer science or programming could set up a cluster using AWS, but who has the time?  Some quick googling uncovered a tremendous software package called, Starcluster, essentially a script that takes all of the pain out of this process.  It’s software written by folks at MIT, and with some minor edits to a configuration file, you can get your own cluster up and running in a matter of minutes.</p>
 
@@ -753,7 +765,13 @@ node002
   
 
   <section class="background" data-size="page">
-    <div class="post-nav">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<div class="post-nav">
   <span>
     
       <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
