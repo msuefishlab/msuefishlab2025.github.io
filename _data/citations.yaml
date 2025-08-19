@@ -17,18 +17,6 @@
   - Transcriptome
   - Reproduction
   - Signal Evolution
-- id: doi:10.1101/2024.09.02.610879
-  title: Mechanistic insights into gene expression changes and electric organ discharge
-    elongation in mormyrid electric fish
-  authors:
-  - Mauricio Losilla
-  - Jason R. Gallant
-  publisher: Cold Spring Harbor Laboratory
-  date: '2024-09-03'
-  link: https://doi.org/g9xfhq
-  orcid: 0000-0002-6528-090X
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1093/g3journal/jkac331
   title: Molecular evolution of the ependymin-related gene <i>epdl2</i> in African
     weakly electric fish
@@ -68,18 +56,6 @@
   extra-links:
   - type: pdf
     link: images/sciadv.abm2970.pdf
-- id: doi:10.1101/2022.07.13.499928
-  title: Molecular evolution of the ependymin-related gene<i>epdl2</i>in African weakly
-    electric fish
-  authors:
-  - Mauricio Losilla
-  - Jason R. Gallant
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-07-14'
-  link: https://doi.org/g9xfhr
-  orcid: 0000-0002-6528-090X
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1111/jfb.14779
   title: Sperm competition, sexual selection and the diverse reproductive biology
     of Osteoglossiformes
@@ -156,18 +132,6 @@
   extra-links:
   - type: pdf
     link: images/gallant_and_oconnell_2020.pdf
-- id: doi:10.1101/625475
-  title: The transcriptional correlates of divergent electric organ discharges in<i>Paramormyrops</i>electric
-    fish
-  authors:
-  - Mauricio Losilla
-  - Jason R. Gallant
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-05-02'
-  link: https://doi.org/gk2wdq
-  orcid: 0000-0002-6528-090X
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3791/60253
   title: 'Silencing the Spark: CRISPR/Cas9 Genome Editing in Weakly Electric Fish'
   authors:
@@ -242,21 +206,6 @@
   extra-links:
   - type: pdf
     link: images/gallant_et_al_2017.pdf
-- id: doi:10.1101/154047
-  title: Genetic drift does not sufficiently explain patterns of electric signal variation
-    among populations of the mormyrid electric fish<i>Paramormyrops kingsleyae</i>
-  authors:
-  - Sophie Picq
-  - Joshua Sperling
-  - Catherine J. Cheng
-  - Bruce A. Carlson
-  - Jason R. Gallant
-  publisher: Cold Spring Harbor Laboratory
-  date: '2017-06-22'
-  link: https://doi.org/gkvbjd
-  orcid: 0000-0002-6528-090X
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1186/s12864-015-1288-8
   title: Unique patterns of transcript and miRNA expression in the South American
     strong voltage electric eel (Electrophorus electricus)
