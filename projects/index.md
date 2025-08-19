@@ -7,7 +7,7 @@ nav:
 
 # <i class="fas fa-tools"></i>Current Projects
 
-The links below represent our current areas of research focus. Don't see something here you think ought to be here? Inquire about joining our lab!
+We use electric fish as a natural laboratory to understand how genomes give rise to new traits, how evolution repeats itself, and how biodiversity emerges. Our work spans genes, signals, organs, and reproduction.
 
 {% include search-info.html %}
 

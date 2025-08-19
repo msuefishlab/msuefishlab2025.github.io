@@ -28,15 +28,25 @@ title: Home
 
 {% include section.html %}
 
+From genes to behavior, we investigate how evolution rewires biology to create something new. Using electric fish—nature’s repeat experiment in evolving electricity—we explore how genomes give rise to novel traits, how signals shape communication and speciation, and what these discoveries reveal about the origins of biodiversity.
+
 # Why Electric Fish?
 
-Vertebrates have evolved a multitude of adaptive traits to exploit resources in the air, on the land, and in the water. While the evolution of these novel traits has led to a rich tapestry of species, the single origin of many of these traits present a statistical dilemma: they are single replicate ‘experiments’ that lack power to resolve how and why novel traits evolve. For this reason, our lab focuses electric fish, vertebrate species that have independently evolved electric organs six times. In each case, electric organs evolved to produce electric fields for the purposes of communication and navigation, and occasionally for predation and defense.
+Electric fish represent evolution’s repeat experiments. Unlike traits that evolved only once (wings, feathers, limbs), electric organs have independently evolved **six times** across vertebrates. Each time, evolution rewired muscle into a biological battery—producing electric fields for communication, navigation, and sometimes defense or predation.
 
-Two parallel electric fish lineages have undergone rapid speciation as a consequence of electric organ evolution and exhibit convergent evolution at every biological level: from molecules to ecology. The electric fish system is therefore highly amenable to understanding the link between genotype and phenotype because it provides replicated natural experiments in which evolution has produced similar phenotypic outcomes both within and between these lineages.
+Because these origins are independent yet strikingly similar, electric fish provide a powerful natural laboratory for answering one of biology’s biggest questions: **How do genomes give rise to novel traits, and why does evolution repeat itself?**
 
-# About our work
+# About Our Work
 
-Our work is fundamentally integrative and spans biological levels of analysis and disciplines, including ecology and evolution, genomics and bioinformatics, physiology, developmental biology, and animal behavior. Our work takes place in the field, the laboratory and in silico. Our laboratory focuses on (1) building weakly electric fish as a model for genotype-to-phenotype studies, (2) the evolution and development of electric organs (3) the proximate and ultimate causes of electric signal evolution and (4) the evolution of electric fish reproduction.
+The Gallant Lab combines **fieldwork in Central Africa, genomics and bioinformatics, physiology, developmental biology, and animal behavior** to explore how new traits evolve.  
+Our research focuses on four themes:
+
+1. **Building electric fish into a powerful model system for evolutionary biology** (genomics, CRISPR, and transgenics).
+2. **Origins of electric organs** — how evolution repeatedly transforms muscle into electricity-producing cells.
+3. **Evolution of electric signals** — why fish signals diversify, and how they shape communication, behavior, and speciation.
+4. **Reproductive evolution** — from unusual sperm biology to breeding strategies that influence species’ trajectories.
+
+Together, these studies reveal the rules of innovation in evolution and highlight how biodiversity arises at the intersection of genes, development, and ecology.
 
 {% include section.html %}
 
