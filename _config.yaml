@@ -1,19 +1,15 @@
 # site properties and page defaults
-title: msuefishlab
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
-header: images/background.jpg
-footer: images/background.jpg
-proofer: false
+title: MSU Electric Fish Lab
+description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+logo: images/efishlab_logo_cropped.png
+baseurl: /
 
 # site social media and other links
 links:
-  email: contact@msuefishlab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: jgallant@msu.edu
+  google-scholar: Jason Gallant
   github: msuefishlab
-  twitter: msuefishlab
-  youtube: msuefishlab
+  twitter: jasongallant
 
 ### jekyll settings
 
