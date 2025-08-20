@@ -7,17 +7,37 @@ nav:
 
 {% include section.html %}
 
-# <i class="fas fa-tools"></i>Outreach and Education:
+# <i class="fas fa-graduation-cap"></i> Teaching & Outreach
 
-## Currently Teaching:
+I teach with a simple goal: help students become curious, self-directed biologists—not memorize “a pile of sundry facts.” That means inquiry-based courses, plenty of low-stakes practice on the way to big, meaningful products (papers, projects), and regular, individualized feedback (including 1–2 required one-on-ones in writing-intensive classes). I also build project-based labs that develop conceptual, procedural, and “how we know” (epistemological) skills.
+
+**How this shows up in my classes**
+
+- Scaffolded assignments that build toward a final paper or research product.
+- Multiple chances to demonstrate mastery (and make & learn from mistakes).
+- Activities that pull in students’ own interests—then push them further.
+- Clear, frequent, constructive feedback the whole way through.
+
+## Currently Teaching
 
 {% include list.html component="coursecard" data="teaching" filter="group == 'current'" %}
 
-## Previously Taught:
+## Previously Taught
 
 {% include list.html component="coursecard" data="teaching" filter="group == 'past'" %}
 
-# <i class="fas fa-tools"></i>Outreach
+## Mentoring
+
+Training scientists is a core part of my job and our lab culture. Since arriving at MSU, I’ve mentored graduate students, postdocs, technicians, and a large cohort of undergraduates—many from groups historically underrepresented in STEM. Our undergraduates have an excellent track record of moving on to graduate programs, and my mentoring has been recognized with college-level and student-selected awards. I also invest in mentoring the mentors, building structured mentoring practices for the whole group.
+
+**What this looks like in practice**
+
+- Intentional on-ramps for undergrads, with real ownership of projects.
+- Regular 1:1s focused on goals, feedback, and growth.
+- Explicit training in research design, analysis, and communication.
+- A welcoming lab that values diverse backgrounds and experiences.
+
+# <i class="fas fa-bullhorn"></i> Outreach
 
 <figure class="outreach-media">
   <video controls poster="/images/outreach_rig.jpg" width="600">
@@ -31,34 +51,31 @@ nav:
   </figcaption>
 </figure>
 
-Public outreach is a huge component of our work! You will find many members of the laboratory working out in Michigan and around the country, educating children and adults alike about our research! We've built a number of devices that highlight the unique abilities of electric fish using multiple senses, including light. Of course, one example of this is our favorite holiday classic on campus, the [Electric Fish Christmas Tree](/2014/12/12/electric-fish-christmas-tree/), which you can behold from the comfort of your own home, or even build yourself! If you're feeling particularly festive, come visit it in the basement of Natural Sciences where it is displayed every year from Thanksgiving to New Year's!
+Public outreach is a huge component of our work. You’ll find us around Michigan (and beyond) showing how electric fish sense their world and how we turn those signals into light and sound. A favorite campus tradition is our <a href="/2014/12/12/electric-fish-christmas-tree/">Electric Fish Christmas Tree</a>—and yes, you can build one too. We also bring a traveling, multi-modal “electric fish experience” to K-12 schools, reaching hundreds of students with hands-on activities that connect life and physical sciences.
 
 <figure class="outreach-media">
   <img src="/images/mau_savvas_outreach.jpeg"
        alt="Grad students teaching K-12 teachers how to incorporate electric fish in their lessons"
        width="600">
   <figcaption>
-    Our awesome grad students teaching K‑12 teachers how to incorporate electric fish in their lessons.
+    Our awesome grad students teaching K-12 teachers how to incorporate electric fish in their lessons.
   </figcaption>
 </figure>
 
-<p>Several members of the lab are also active in training teachers on using electric fish in their classrooms, through participation in the Kellogg Biological Stations' <a href="http://kbsgk12project.kbs.msu.edu">GK-12 Program</a>. Shown here are <a href="/people/mau/">Mau</a> and <a href="/people/savvas/">Savvas</a> lecturing during one of these recent training sessions. In the coming months, watch this space as we will be developing new materials for teachers and sharing them on this website! While there is certainly a strong biological component to our work, our curriculum modules can be well integrated into middle-school physics classrooms as a way to discuss “forms of energy”. Did you know that electric fishes inspired the design of the voltaic pile?</p>
+Several members of the lab are active in training teachers through the Kellogg Biological Station’s <a href="http://kbsgk12project.kbs.msu.edu">GK-12 Program</a>. Shown here are <a href="/people/mau/">Mau</a> and <a href="/people/savvas/">Savvas</a> leading a recent session. We’re building and sharing open materials teachers can drop straight into their classrooms—especially useful for middle-school physics when discussing “forms of energy.” (Fun fact: electric fishes helped inspire the voltaic pile.)
 
 <figure class="outreach-media">
   <img src="/images/kat_outreach.jpeg" alt="Kat leading outreach: pin the electrocyte on the fish" width="600">
   <figcaption>
-    Kat lead a great outreach effort today, including “pin the electrocyte on the fish”.
+    Kat led a great outreach event featuring “Pin the electrocyte on the electric fish.”
   </figcaption>
 </figure>
 
-<p>
-Of course, learning about Electric Fish can be fun and games! We’ve come up with some clever ways of getting students to think about anatomy and physiology, too. An example of this was the development of a fun game designed by <a href="/people/kat">Kat</a>: “Pin the electrocyte on the electric fish!” We’ve been getting calls from Milton-Bradley (We kid..) The kids that visited us at <a href="http://sciencefestival.msu.edu">MSU’s Science Festival</a> sure dug it though! In 2016, we participated in Science Night: East Lansing throughout the month of November, and met hundreds of kids and their parents, and of course introduced them to the wonders of electric fish. We’ll undoubtedly be taking our road show into elementary schools again this fall, so stay tuned!
-</p>
+Of course, learning about electric fish can be fun and games. We’ve developed tactile activities to spark curiosity about anatomy and physiology—like <a href="/people/kat">Kat</a>’s “Pin the electrocyte on the electric fish.” We also participate in the <a href="http://sciencefestival.msu.edu">MSU Science Festival</a> and East Lansing Science Nights, meeting hundreds of kids and families each year.
 
-### Public Engagement:
+### For Teachers & Partners
 
-Dr. Gallant gives lectures and has appeared in a variety of media outlets around the country and state to discuss electric fish and the laboratory's latest findings. Below are a few of our more favorite outreach experiences:
+We collaborate with schools to co-design lessons, from single-day activities to short project modules. If you’re a teacher or community partner interested in classroom visits or materials, <a href="/contact/">get in touch</a>—we’re happy to help.
 
 {% include search-info.html %}
-
 {% include section.html %}

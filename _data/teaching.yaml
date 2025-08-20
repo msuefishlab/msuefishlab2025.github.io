@@ -1,29 +1,49 @@
 - name: Evolution (IBIO445 - Spring)
   group: current
   link: outreach/ibio445/
-  description: Processes of evolutionary change in animals, plants. Microbes. Population genetics, microevolution, speciation, adaptive radiation, macroevolution. Origin of Homo sapiens.
+  description: >-
+    Writing-intensive exploration of evolution from population genetics to speciation.
+    Students build a polished term paper on a contemporary controversy through scaffolded
+    assignments, peer review, and 1–2 required one-on-one meetings. Emphasis on interpreting
+    primary literature and real datasets; honors students design classroom lessons using
+    electric fish to teach evolutionary principles.
 
 - name: Evolutionary Biology (PLB/ZOL 849 - Fall)
   group: past
   image: images/photo.jpg
   link: outreach/evol849/
-  description: Major conceptual, theoretical and empirical questions in evolutionary biology. Readings and lectures are synthesized in student discussions and papers.
+  description: >-
+    Graduate seminar on the conceptual, theoretical, and empirical foundations of evolution.
+    Student-led discussions of classic and current papers culminate in synthesis essays
+    and presentations. Threads include selection, macroevolution, behavioral evolution,
+    and genomics—always with an eye toward framing testable hypotheses.
 
 - name: Developmental Biology (IBIO 320 - Fall)
   group: past
   image: images/photo.jpg
   link: outreach/ibio320/
-  description: Principles of development, emphasizing vertebrates. Illustrations from morphological and experimental investigations.
+  description: >-
+    Active-learning course emphasizing modern genetics and genomics. A signature lab module
+    guides students through RNA interference in C. elegans targeting homologs of human
+    disease genes, with imaging and data interpretation. Weekly discussions connect development
+    to society (e.g., teratogens and environmental justice).
 
 - name: MSU NGS Methods Reading Group (IBIO 890 - Fall)
   group: past
   image: images/photo.jpg
   link: /outreach/msu_ngs/
-  description: A reading group for graduate students, postdocs and faculty on using next-generation sequencing methods.
+  description: >-
+    Weekly journal club on next-generation sequencing and study design for grads, postdocs,
+    and faculty. Participants present methods/papers and write short digests. Topics span
+    RNA-seq, variant calling, long-read/Oxford Nanopore, workflow best practices, and
+    leveraging MSU HPCC resources.
 
 - name: Neurobiología de la Conducta Social RNA-seq
   group: past
   image: images/photo.jpg
-  link:   https://github.com/jasongallant/nbcs_rnaseq
-  description: A workshop taught in Montevideo, Uruguay in 2019
+  link: https://github.com/jasongallant/nbcs_rnaseq
+  description: >-
+    Hands-on RNA-seq workshop (Montevideo, 2019) covering experimental design, QC,
+    alignment, and differential expression with reproducible analysis workflows—built
+    around shared notebooks and examples hosted on GitHub.
   repo: jasongallant/nbcs_rnaseq
