@@ -12,18 +12,16 @@
   {%- assign tag = "span" -%}
 {%- endif -%}
 
-{::nomarkdown}
 <div class="course_excerpt">
-    {%- if include.name -%}
-      <{{ tag }} href="{{ include.link | relative_url }}" {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %} class="card_name">
-        {{- include.name -}}
-      </{{ tag }}>
-    {%- endif -%}
-    {%- if include.description -%}
-      {{- include.description | markdownify -}}
-    {%- endif -%}
-    {%- if include.tag or include.repo -%}
-      {%- include tags.html tags=include.tags repo=include.repo -%}
-    {%- endif -%}
-    </div>
-{:/}
+  {%- if include.name -%}
+    <{{ tag }} href="{{ include.link | relative_url }}" {% if include.tooltip %}data-tooltip="{{ include.tooltip }}"{% endif %} class="card_name">
+      {{- include.name -}}
+    </{{ tag }}>
+  {%- endif -%}
+  {%- if include.description -%}
+    {{- include.description | markdownify -}}
+  {%- endif -%}
+  {%- if include.tag or include.repo -%}
+    {%- include tags.html tags=include.tags repo=include.repo -%}
+  {%- endif -%}
+</div>
