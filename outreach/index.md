@@ -19,7 +19,17 @@ nav:
 
 # <i class="fas fa-tools"></i>Outreach
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s a closeup of our outreach rig. <a href="https://twitter.com/hashtag/eastlansingsciencenights?src=hash&amp;ref_src=twsrc%5Etfw">#eastlansingsciencenights</a> <a href="https://t.co/VIEr5xfhcL">pic.twitter.com/VIEr5xfhcL</a></p>&mdash; jasongallant (@jasongallant) <a href="https://twitter.com/jasongallant/status/797959275310002177?ref_src=twsrc%5Etfw">November 14, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<figure class="outreach-media">
+  <video controls poster="/images/outreach_rig.jpg" width="600">
+    <source src="/images/outreach_rig.mov" type="video/quicktime">
+    <p>Your browser does not support the video tag. You can
+      <a href="/images/outreach_rig.mov">download the video here</a>.
+    </p>
+  </video>
+  <figcaption>
+    Here’s a closeup of our outreach rig (filmed at an East Lansing Science Night).
+  </figcaption>
+</figure>
 
 Public outreach is a huge component of our work! You will find many members of the laboratory working out in Michigan and around the country, educating children and adults alike about our research! We've built a number of devices that highlight the unique abilities of electric fish using multiple senses, including light. Of course, one example of this is our favorite holiday classic on campus, the [Electric Fish Christmas Tree](/2014/12/12/electric-fish-christmas-tree/), which you can behold from the comfort of your own home, or even build yourself! If you're feeling particularly festive, come visit it in the basement of Natural Sciences where it is displayed every year from Thanksgiving to New Year's!
 
