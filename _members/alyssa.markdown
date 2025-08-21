@@ -1,7 +1,9 @@
 ---
 name: Alyssa Green
 image: images/alyssa.jpg
-role: Ph.D. Candidate
+group:
+description: Ph.D. Student
+role: phd
 links:
   orcid: 0009-0005-0569-4843
   email: saund165@msu.edu
