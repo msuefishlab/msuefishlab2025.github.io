@@ -7,7 +7,7 @@ group:
 links:
   orcid: 0000-0002-6528-090X
   email: jgallant@msu.edu
-  twitter: jasongallant
+  bluesky: jasongallant.bsky.social
 ---
 
 **Associate Professor**  
