@@ -7,8 +7,8 @@ role: phd
 links:
   orcid: 0009-0005-0569-4843
   email: saund165@msu.edu
-  LinkedIn: https://www.linkedin.com/in/alyssa-green-6ab09a184/
-  Instagram: https://www.instagram.com/alygreenscience
+  linkedin: https://www.linkedin.com/in/alyssa-green-6ab09a184/
+  instagram: https://www.instagram.com/alygreenscience
 ---
 
 **PhD Candidate**  
