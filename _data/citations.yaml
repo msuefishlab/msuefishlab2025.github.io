@@ -1,5 +1,21 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s44358-025-00098-x
+  title: "Biologists should embrace Earth\u2019s biodiversity as a library of solutions"
+  authors:
+  - Jason R. Gallant
+  publisher: Nature Reviews Biodiversity
+  date: '2025-11-10'
+  link: https://doi.org/g9952p
+  orcid: 0000-0002-6528-090X
+  plugin: sources.py
+  file: sources.yaml
+  image: images/library.jpg
+  tags:
+  - Review
+  extra-links:
+  - type: pdf
+    link: images/natrevbiod_gallant_2025.pdf
 - id: doi:10.1242/jeb.249548
   title: Gene expression correlates and mechanistic insights into electric organ discharge
     duration changes in mormyrid electric fish
@@ -411,21 +427,6 @@
   extra-links:
   - type: pdf
     link: images/gallant_etal_2011.pdf
-- id: doi:10.1038/s44358-025-00098-x
-  title: "Biologists should embrace Earth\u2019s biodiversity as a library of solutions"
-  authors:
-  - Jason R. Gallant
-  publisher: Nature Reviews Biodiversity
-  date: '2025-11-10'
-  link: https://doi.org/g9952p
-  image: images/library.jpg
-  tags:
-  - Review
-  extra-links:
-  - type: pdf
-    link: images/natrevbiod_gallant_2025.pdf
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1002/jez.b.23242
   title: "A review of the reproductive biology of mormyroid\_fishes: An emerging model\
     \ for biomedical research"
