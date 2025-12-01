@@ -13,8 +13,8 @@
   image: images/library.jpg
   tags:
       - Review
-  extra-links:
-    - type: pdf
+  button:
+    - type: journal
       link: images/natrevbiod_gallant_2025.pdf
 
 - id: doi:10.1242/jeb.249548
