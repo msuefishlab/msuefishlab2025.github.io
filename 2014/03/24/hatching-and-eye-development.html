@@ -66,10 +66,10 @@
 
   <meta name="author" content="Jason Gallant">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-02-09T17:33:59+00:00">
+  <meta property="og:updated_time" content="2026-02-09T17:35:39+00:00">
   <meta property="article:published_time" content="2014-03-24T13:16:28+00:00">
-  <meta property="article:modified_time" content="2026-02-09T17:33:59+00:00">
-  <meta name="revised" content="2026-02-09T17:33:59+00:00">
+  <meta property="article:modified_time" content="2026-02-09T17:35:39+00:00">
+  <meta name="revised" content="2026-02-09T17:35:39+00:00">
 
 
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Hatching and eye development" },
       "datePublished": "2014-03-24T13:16:28+00:00",
-      "dateModified": "2026-02-09T17:33:59+00:00",
+      "dateModified": "2026-02-09T17:35:39+00:00",
     
     "name": "Hatching and eye development",
     "description": "An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
@@ -325,6 +325,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -333,12 +334,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -354,49 +355,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
+        <li>
         <a href="/research/" data-tooltip="Published works">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/outreach/" data-tooltip="Outreach and Education">
           Education
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/team/" data-tooltip="About our team">
           Team
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -429,7 +444,7 @@
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -441,14 +456,14 @@
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 24, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -499,7 +514,7 @@
 <div class="post-nav">
   <span>
     
-      <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
+      <i class="icon fa-solid fa-angle-left" aria-hidden="true"></i> Previous post<br>
       <a href="/2014/03/23/getting-ready-to-hatch.html">
         Getting Ready to Hatch!
       </a>
@@ -507,7 +522,7 @@
   </span>
   <span>
     
-      Next post <i class="icon fa-solid fa-angle-right"></i><br>
+      Next post <i class="icon fa-solid fa-angle-right" aria-hidden="true"></i><br>
       <a href="/2014/04/05/dr-gallant-lectures-at-the-belle-isle-aquarium-in-detroit.html">
         Dr. Gallant lectures at the Belle Isle Aquarium in Detroit
       </a>
@@ -521,76 +536,78 @@
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -601,7 +618,7 @@
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>

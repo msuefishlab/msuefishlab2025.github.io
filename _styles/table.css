@@ -14,4 +14,14 @@ td {
   border: solid 1px var(--light-gray);
 }
 
+/* Keyboard-accessible scrollable table wrapper */
+.table-wrapper {
+  position: relative;
+}
+
+.table-wrapper:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 /*# sourceMappingURL=table.css.map */

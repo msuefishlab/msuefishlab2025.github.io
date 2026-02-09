@@ -371,6 +371,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -379,12 +380,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -400,49 +401,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
-        <a href="/research/" data-tooltip="Published works">
+        <li>
+        <a href="/research/" data-tooltip="Published works" aria-current="page">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/outreach/" data-tooltip="Outreach and Education">
           Education
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/team/" data-tooltip="About our team">
           Team
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -461,12 +476,16 @@
 
   <section class="background" data-size="page">
     <h1 id="research-publications">
-<i class="fas fa-microscope"></i>Research Publications</h1>
+<i class="fas fa-microscope" aria-hidden="true"></i>Research Publications</h1>
 
 <div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
-    <i class="icon fa-solid fa-magnifying-glass"></i>
+  <label for="search-input" class="sr-only">Search items on this page</label>
+  <input id="search-input" type="text" class="search-input" placeholder="Search items on this page" aria-describedby="search-instructions">
+  <span id="search-instructions" class="sr-only">
+    Type to search. Use quotes for exact phrases. Use "tag: tagname" to filter by tag.
+  </span>
+  <button disabled data-tooltip="Clear search" aria-label="clear search">
+    <i class="icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
   </button>
 </div>
 
@@ -477,9 +496,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/hbkd3h" class="citation-image" aria-label="The Genomic Basis of Electric Signal Diversity">
+      <div class="citation-image">
         <img src="" alt="The Genomic Basis of Electric Signal Diversity" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -490,7 +509,7 @@
         The Genomic Basis of Electric Signal Diversity
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant, Sophie Picq, Lauren Koenig, Nestor Ngoua Aba’a, Franck Nzigou, Hans Kevin Mipounga
 
       </div>
@@ -518,9 +537,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/g9952p" class="citation-image" aria-label="Biologists should embrace Earth s biodiversity as a library of solutions">
+      <div class="citation-image">
         <img src="/images/library.jpg" alt="Biologists should embrace Earth s biodiversity as a library of solutions" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -531,7 +550,7 @@
         Biologists should embrace Earth’s biodiversity as a library of solutions
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant
 
       </div>
@@ -556,7 +575,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/natrevbiod_gallant_2025.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -590,9 +609,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/g9xfc5" class="citation-image" aria-label="Gene expression correlates and mechanistic insights into electric organ discharge duration changes in mormyrid electric fish">
+      <div class="citation-image">
         <img src="https://cob.silverchair-cdn.com/cob/content_public/journal/jeb/228/11/10.1242_jeb.249548/1/jeb24954803.png?Expires=1758205429&Signature=nBUClhBiSnEOtZpuRN-0Tjg0N1azfyk18Y9FF8n1Nsz4as7ZQRcTVoWEoWJ8LjwJNzdl~okIyJm5RFoLuHRwC54IwubofXnVTfpkagkPPVp4nNK3~4Z~~mHUUoXFu7DsHMiYoHhsq6i3zG0KI2xxA-EiFyk0vXEi0QfAKCbyRf80JdGVV7RvH66uV9SQ1EbLdFHNKCoJxY5AfI0i~yV5DMhMeFLXltg-gSrF6tMSU7Ukvs3Av48uZTO0gYTFH74HM1UmK5ru3tF~wOyuSbljJegXtlLjU0bD5X4MD6mGrSaamVAB4Ny54~O0zwqCjsM5VydCPt7hInkD5foH69NdSg__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="Gene expression correlates and mechanistic insights into electric organ discharge duration changes in mormyrid electric fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -603,7 +622,7 @@
         Gene expression correlates and mechanistic insights into electric organ discharge duration changes in mormyrid electric fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Mauricio Losilla, Jason R. Gallant
 
       </div>
@@ -652,9 +671,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gtjbks" class="citation-image" aria-label="A review of the reproductive biology of mormyroid fishes: An emerging model for biomedical research">
+      <div class="citation-image">
         <img src="https://onlinelibrary.wiley.com/cms/asset/96032b62-2449-419b-ad26-9a4f7bcb0edf/jezb23242-fig-0001-m.jpg" alt="A review of the reproductive biology of mormyroid fishes: An emerging model for biomedical research" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -665,7 +684,7 @@
         A review of the reproductive biology of mormyroid fishes: An emerging model for biomedical research
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Alyssa N. Saunders, Jason R. Gallant
 
       </div>
@@ -705,9 +724,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/g9xfc6" class="citation-image" aria-label="Timing and precision of rattlesnake spinal motoneurons are determined by the KV72 3 potassium channel">
+      <div class="citation-image">
         <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982223016500-fx1.jpg" alt="Timing and precision of rattlesnake spinal motoneurons are determined by the KV72 3 potassium channel" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -718,7 +737,7 @@
         Timing and precision of rattlesnake spinal motoneurons are determined by the KV72/3 potassium channel
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Maximilian S. Bothe, Tobias Kohl, Felix Felmy, Jason Gallant, Boris P. Chagnaud
 
       </div>
@@ -759,9 +778,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/grpns4" class="citation-image" aria-label="Molecular evolution of the ependymin-related gene i epdl2 i in African weakly electric fish">
+      <div class="citation-image">
         <img src="/images/epdltree.png" alt="Molecular evolution of the ependymin-related gene i epdl2 i in African weakly electric fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -774,7 +793,7 @@
                     in African weakly electric fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Mauricio Losilla, Jason R Gallant
 
       </div>
@@ -818,9 +837,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gp8prp" class="citation-image" aria-label="Divergent cis-regulatory evolution underlies the convergent loss of sodium channel expression in electric fish">
+      <div class="citation-image">
         <img src="/images/bgaud_cover1_candidate.jpg" alt="Divergent cis-regulatory evolution underlies the convergent loss of sodium channel expression in electric fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -831,7 +850,7 @@
         Divergent cis-regulatory evolution underlies the convergent loss of sodium channel expression in electric fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Sarah LaPotin, Mary E. Swartz, David M. Luecke, Savvas J. Constantinou, Jason R. Gallant, Johann K. Eberhart, Harold H. Zakon
 
       </div>
@@ -856,7 +875,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/sciadv.abm2970.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -891,9 +910,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gjzbkw" class="citation-image" aria-label="Sperm competition, sexual selection and the diverse reproductive biology of Osteoglossiformes">
+      <div class="citation-image">
         <img src="https://onlinelibrary.wiley.com/cms/asset/192098fe-d44b-4a9c-a69c-e870233af510/jfb14779-fig-0001-m.jpg" alt="Sperm competition, sexual selection and the diverse reproductive biology of Osteoglossiformes" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -904,7 +923,7 @@
         Sperm competition, sexual selection and the diverse reproductive biology of Osteoglossiformes
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Lauren A. Koenig, Jason R. Gallant
 
       </div>
@@ -929,7 +948,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/koenigandgallant2021.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -964,9 +983,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxc7" class="citation-image" aria-label="Genetic drift does not sufficiently explain patterns of electric signal variation among populations of the mormyrid electric fish i Paramormyrops kingsleyae i">
+      <div class="citation-image">
         <img src="https://onlinelibrary.wiley.com/cms/asset/24de0b40-6882-44e7-8598-676ce326907d/evo13953-fig-0001-m.jpg" alt="Genetic drift does not sufficiently explain patterns of electric signal variation among populations of the mormyrid electric fish i Paramormyrops kingsleyae i" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -978,7 +997,7 @@
                     <i>Paramormyrops kingsleyae</i>
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Sophie Picq, Joshua Sperling, Catherine J. Cheng, Bruce A. Carlson, Jason R. Gallant
 
       </div>
@@ -1003,7 +1022,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/picqetal2020.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1037,9 +1056,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxc8" class="citation-image" aria-label="Studying convergent evolution to relate genotype to behavioral phenotype">
+      <div class="citation-image">
         <img src="/images/m_jeb21344701.png" alt="Studying convergent evolution to relate genotype to behavioral phenotype" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1050,7 +1069,7 @@
         Studying convergent evolution to relate genotype to behavioral phenotype
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant, Lauren A. O’Connell
 
       </div>
@@ -1075,7 +1094,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallant_and_oconnell_2020.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1109,9 +1128,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxc9" class="citation-image" aria-label="The transcriptional correlates of divergent electric organ discharges in Paramormyrops electric fish">
+      <div class="citation-image">
         <img src="https://media.springernature.com/full/springer-static/image/art:10.1186/s12862-019-1572-3/MediaObjects/12862_2019_1572_Fig2_HTML.png?as=webp" alt="The transcriptional correlates of divergent electric organ discharges in Paramormyrops electric fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1122,7 +1141,7 @@
         The transcriptional correlates of divergent electric organ discharges in Paramormyrops electric fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Mauricio Losilla, David Michael Luecke, Jason R. Gallant
 
       </div>
@@ -1147,7 +1166,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/losilla_et_al_2020.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1186,9 +1205,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxdb" class="citation-image" aria-label="Silencing the Spark: CRISPR Cas9 Genome Editing in Weakly Electric Fish">
+      <div class="citation-image">
         <img src="https://cloudfront.jove.com/files/ftp_upload/60253/60253fig06.jpg" alt="Silencing the Spark: CRISPR Cas9 Genome Editing in Weakly Electric Fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1199,7 +1218,7 @@
         Silencing the Spark: CRISPR/Cas9 Genome Editing in Weakly Electric Fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Savvas  J. Constantinou, Linh Nguyen, Frank Kirschbaum, Vielka  L. Salazar, Jason R. Gallant
 
       </div>
@@ -1224,7 +1243,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/constantinou_etal_2019.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1262,9 +1281,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnr55t" class="citation-image" aria-label="The Evolution and Development of Electric Organs">
+      <div class="citation-image">
         <img src="/images/evodevo.png" alt="The Evolution and Development of Electric Organs" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1275,7 +1294,7 @@
         The Evolution and Development of Electric Organs
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant
 
       </div>
@@ -1300,7 +1319,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1335,9 +1354,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gdpdk6" class="citation-image" aria-label="Electrostatic Tuning of a Potassium Channel in Electric Fish">
+      <div class="citation-image">
         <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982218306146-fx1.jpg" alt="Electrostatic Tuning of a Potassium Channel in Electric Fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1348,7 +1367,7 @@
         Electrostatic Tuning of a Potassium Channel in Electric Fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Immani Swapna, Alfredo Ghezzi, Julia M. York, Michael R. Markham, D. Brent Halling, Ying Lu, Jason R. Gallant, Harold H. Zakon
 
       </div>
@@ -1373,7 +1392,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/immani_et_al_2019.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1407,9 +1426,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gdpdk6" class="citation-image" aria-label="Electrostatic Tuning of a Potassium Channel in Electric Fish">
+      <div class="citation-image">
         <img src="" alt="Electrostatic Tuning of a Potassium Channel in Electric Fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1420,7 +1439,7 @@
         Electrostatic Tuning of a Potassium Channel in Electric Fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Immani Swapna, Alfredo Ghezzi, Julia M. York, Michael R. Markham, D. Brent Halling, Ying Lu, Jason R. Gallant, Harold H. Zakon
 
       </div>
@@ -1448,9 +1467,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gcpk9x" class="citation-image" aria-label="The Genome and Adult Somatic Transcriptome of the Mormyrid Electric Fish Paramormyrops kingsleyae">
+      <div class="citation-image">
         <img src="/images/m_evx265f1.jpeg" alt="The Genome and Adult Somatic Transcriptome of the Mormyrid Electric Fish Paramormyrops kingsleyae" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1461,7 +1480,7 @@
         The Genome and Adult Somatic Transcriptome of the Mormyrid Electric Fish Paramormyrops kingsleyae
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R Gallant, Mauricio Losilla, Chad Tomlinson, Wesley C Warren
 
       </div>
@@ -1486,7 +1505,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallant_et_al_2017.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1521,9 +1540,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxdc" class="citation-image" aria-label="Electric fish genomics: Progress, prospects, and new tools for neuroethology">
+      <div class="citation-image">
         <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0928425716300079-gr1.jpg" alt="Electric fish genomics: Progress, prospects, and new tools for neuroethology" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1534,7 +1553,7 @@
         Electric fish genomics: Progress, prospects, and new tools for neuroethology
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         William R. Pitchers, Savvas J. Constantinou, Mauricio Losilla, Jason R. Gallant
 
       </div>
@@ -1559,7 +1578,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/pitchers_et_al_2016.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1594,9 +1613,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/f69v2p" class="citation-image" aria-label="Unique patterns of transcript and miRNA expression in the South American strong voltage electric eel Electrophorus electricus">
+      <div class="citation-image">
         <img src="https://media.springernature.com/full/springer-static/image/art:10.1186/s12864-015-1288-8/MediaObjects/12864_2015_1288_Fig1_HTML.gif?as=webp" alt="Unique patterns of transcript and miRNA expression in the South American strong voltage electric eel Electrophorus electricus" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1607,7 +1626,7 @@
         Unique patterns of transcript and miRNA expression in the South American strong voltage electric eel (Electrophorus electricus)
       </a>
 
-      <div class="citation-authors" data-tooltip="Lindsay L Traeger, Jeremy D Volkening, Howell Moffett, Jason R Gallant, Po-Hao Chen, Carl D Novina, George N Phillips, Rene Anand, Gregg B Wells, Matthew Pinch, Robert Güth, Graciela A Unguez, James S Albert, Harold Zakon, Michael R Sussman, Manoj P Samanta" tabindex="0">
+      <div class="citation-authors" aria-label="Full author list: Lindsay L Traeger, Jeremy D Volkening, Howell Moffett, Jason R Gallant, Po-Hao Chen, Carl D Novina, George N Phillips, Rene Anand, Gregg B Wells, Matthew Pinch, Robert Güth, Graciela A Unguez, James S Albert, Harold Zakon, Michael R Sussman, Manoj P Samanta" data-tooltip="Lindsay L Traeger, Jeremy D Volkening, Howell Moffett, Jason R Gallant, Po-Hao Chen, Carl D Novina, George N Phillips, Rene Anand, Gregg B Wells, Matthew Pinch, Robert Güth, Graciela A Unguez, James S Albert, Harold Zakon, Michael R Sussman, Manoj P Samanta">
         Lindsay L Traeger, Jeremy D Volkening, Howell Moffett, Jason R Gallant, Po-Hao Chen, …, Graciela A Unguez, James S Albert, Harold Zakon, Michael R Sussman, Manoj P Samanta
 
       </div>
@@ -1632,7 +1651,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/traeger_et_al_2015.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1671,9 +1690,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/f6kpzv" class="citation-image" aria-label="Ancient homology underlies adaptive mimetic diversity across butterflies">
+      <div class="citation-image">
         <img src="https://media.springernature.com/full/springer-static/image/art:10.1038/ncomms5817/MediaObjects/41467_2014_Article_BFncomms5817_Fig1_HTML.jpg?as=webp" alt="Ancient homology underlies adaptive mimetic diversity across butterflies" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1684,7 +1703,7 @@
         Ancient homology underlies adaptive mimetic diversity across butterflies
       </a>
 
-      <div class="citation-authors" data-tooltip="Jason R. Gallant, Vance E. Imhoff, Arnaud Martin, Wesley K. Savage, Nicola L. Chamberlain, Ben L. Pote, Chelsea Peterson, Gabriella E. Smith, Benjamin Evans, Robert D. Reed, Marcus R. Kronforst, Sean P. Mullen" tabindex="0">
+      <div class="citation-authors" aria-label="Full author list: Jason R. Gallant, Vance E. Imhoff, Arnaud Martin, Wesley K. Savage, Nicola L. Chamberlain, Ben L. Pote, Chelsea Peterson, Gabriella E. Smith, Benjamin Evans, Robert D. Reed, Marcus R. Kronforst, Sean P. Mullen" data-tooltip="Jason R. Gallant, Vance E. Imhoff, Arnaud Martin, Wesley K. Savage, Nicola L. Chamberlain, Ben L. Pote, Chelsea Peterson, Gabriella E. Smith, Benjamin Evans, Robert D. Reed, Marcus R. Kronforst, Sean P. Mullen">
         Jason R. Gallant, Vance E. Imhoff, Arnaud Martin, Wesley K. Savage, Nicola L. Chamberlain, …, Gabriella E. Smith, Benjamin Evans, Robert D. Reed, Marcus R. Kronforst, Sean P. Mullen
 
       </div>
@@ -1709,7 +1728,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallant_et_al_2014.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1747,9 +1766,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/f57jmb" class="citation-image" aria-label="Genomic basis for the convergent evolution of electric organs">
+      <div class="citation-image">
         <img src="/images/best_eel_color_corrected_reduced.tif" alt="Genomic basis for the convergent evolution of electric organs" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1760,7 +1779,7 @@
         Genomic basis for the convergent evolution of electric organs
       </a>
 
-      <div class="citation-authors" data-tooltip="Jason R. Gallant, Lindsay L. Traeger, Jeremy D. Volkening, Howell Moffett, Po-Hao Chen, Carl D. Novina, George N. Phillips, Rene Anand, Gregg B. Wells, Matthew Pinch, Robert Güth, Graciela A. Unguez, James S. Albert, Harold H. Zakon, Manoj P. Samanta, Michael R. Sussman" tabindex="0">
+      <div class="citation-authors" aria-label="Full author list: Jason R. Gallant, Lindsay L. Traeger, Jeremy D. Volkening, Howell Moffett, Po-Hao Chen, Carl D. Novina, George N. Phillips, Rene Anand, Gregg B. Wells, Matthew Pinch, Robert Güth, Graciela A. Unguez, James S. Albert, Harold H. Zakon, Manoj P. Samanta, Michael R. Sussman" data-tooltip="Jason R. Gallant, Lindsay L. Traeger, Jeremy D. Volkening, Howell Moffett, Po-Hao Chen, Carl D. Novina, George N. Phillips, Rene Anand, Gregg B. Wells, Matthew Pinch, Robert Güth, Graciela A. Unguez, James S. Albert, Harold H. Zakon, Manoj P. Samanta, Michael R. Sussman">
         Jason R. Gallant, Lindsay L. Traeger, Jeremy D. Volkening, Howell Moffett, Po-Hao Chen, …, Graciela A. Unguez, James S. Albert, Harold H. Zakon, Manoj P. Samanta, Michael R. Sussman
 
       </div>
@@ -1785,7 +1804,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.npr.org/2014/06/26/325246710/a-shocking-fish-tale-surprises-evolutionary-biologists" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>NPR</span>
       
@@ -1800,7 +1819,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.wired.com/2014/06/electric-fish-convergent-evolution" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Wired</span>
       
@@ -1815,7 +1834,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://newswatch.nationalgeographic.com/2014/06/26/the-shocking-truth-about-electric-animals" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>National Geographic</span>
       
@@ -1830,7 +1849,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.reuters.com/article/2014/06/26/us-science-fish-idUSKBN0F12UW20140626" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Reuters</span>
       
@@ -1845,7 +1864,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://msutoday.msu.edu/news/2014/sequencing-electric-eel-genome-unlocks-shocking-secrets/" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>MSU Today</span>
       
@@ -1860,7 +1879,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.agenciasinc.es/Noticias/La-evolucion-de-los-peces-electricos-sorprende-a-los-cientificos" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>CINA</span>
       
@@ -1875,7 +1894,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallantetal2014.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -1918,9 +1937,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gmq97x" class="citation-image" aria-label="Hybridization Reveals the Evolving Genomic Architecture of Speciation">
+      <div class="citation-image">
         <img src="/images/S2211124713X00166_covhighres.jpg" alt="Hybridization Reveals the Evolving Genomic Architecture of Speciation" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -1931,7 +1950,7 @@
         Hybridization Reveals the Evolving Genomic Architecture of Speciation
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Marcus R. Kronforst, Matthew E.B. Hansen, Nicholas G. Crawford, Jason R. Gallant, Wei Zhang, Rob J. Kulathinal, Durrell D. Kapan, Sean P. Mullen
 
       </div>
@@ -1956,7 +1975,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.economist.com/news/science-and-technology/21588840-how-species-separate-still-mysterious-lepidoptera-make-things" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>The Economist</span>
       
@@ -1971,7 +1990,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://www.latimes.com/science/sciencenow/la-sci-sn-butterflies-evolution-20131030,0,4630140.story#axzz2jKDjncAY)" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>LA Times</span>
       
@@ -1986,7 +2005,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="http://news.sciencemag.org/biology/2013/10/scienceshot-butterfly-study-shows-genomes-change-bits-and-pieces-first)" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Science Magazine</span>
       
@@ -2001,7 +2020,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/kronforstetal2013.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -2039,9 +2058,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxdd" class="citation-image" aria-label="From Sequence to Spike to Spark: Evo-devo-neuroethology of Electric Communication in Mormyrid Fishes">
+      <div class="citation-image">
         <img src="https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/ineg20/2013/ineg20.v027.i03/01677063.2013.799670/20150614/images/large/ineg_a_799670_f0006_b.jpeg" alt="From Sequence to Spike to Spark: Evo-devo-neuroethology of Electric Communication in Mormyrid Fishes" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -2052,7 +2071,7 @@
         From Sequence to Spike to Spark: Evo-devo-neuroethology of Electric Communication in Mormyrid Fishes
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Bruce A. Carlson, Jason R. Gallant
 
       </div>
@@ -2077,7 +2096,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/carlson_and_gallant_2013.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -2116,9 +2135,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gnrxdf" class="citation-image" aria-label="Differential expression of genes and proteins between electric organ and skeletal muscle in the mormyrid electric fish i Brienomyrus brachyistius i">
+      <div class="citation-image">
         <img src="/images/jeb063222f1.jpeg" alt="Differential expression of genes and proteins between electric organ and skeletal muscle in the mormyrid electric fish i Brienomyrus brachyistius i" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -2129,7 +2148,7 @@
         Differential expression of genes and proteins between electric organ and skeletal muscle in the mormyrid electric fish<i>Brienomyrus brachyistius</i>
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant, Carl D. Hopkins, David L. Deitcher
 
       </div>
@@ -2154,7 +2173,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallant_etal_2012.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -2189,9 +2208,9 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/c85zzr" class="citation-image" aria-label="Signal variation and its morphological correlates in Paramormyrops kingsleyae provide insight into the evolution of electrogenic signal diversity in mormyrid electric fish">
+      <div class="citation-image">
         <img src="https://media.springernature.com/full/springer-static/image/art:10.1007/s00359-011-0643-8/MediaObjects/359_2011_643_Fig5_HTML.gif?as=webp" alt="Signal variation and its morphological correlates in Paramormyrops kingsleyae provide insight into the evolution of electrogenic signal diversity in mormyrid electric fish" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
+      </div>
     
 
     <div class="citation-text">
@@ -2202,7 +2221,7 @@
         Signal variation and its morphological correlates in Paramormyrops kingsleyae provide insight into the evolution of electrogenic signal diversity in mormyrid electric fish
       </a>
 
-      <div class="citation-authors" tabindex="0">
+      <div class="citation-authors">
         Jason R. Gallant, Matthew E. Arnegard, John P. Sullivan, Bruce A. Carlson, Carl D. Hopkins
 
       </div>
@@ -2227,7 +2246,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="/images/gallant_etal_2011.pdf" data-tooltip="Journal" data-style="bare" aria-label="Journal">
-      <i class="icon fa-regular fa-newspaper"></i>
+      <i class="icon fa-regular fa-newspaper" aria-hidden="true"></i>
       
         <span>Journal</span>
       
@@ -2264,76 +2283,78 @@
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -2344,7 +2365,7 @@
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>

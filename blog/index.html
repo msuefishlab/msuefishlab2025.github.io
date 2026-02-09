@@ -371,6 +371,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -379,12 +380,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -400,49 +401,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
+        <li>
         <a href="/research/" data-tooltip="Published works">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/outreach/" data-tooltip="Outreach and Education">
           Education
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/team/" data-tooltip="About our team">
           Team
         </a>
+        </li>
       
     
       
-        <a href="/blog/" data-tooltip="Musings and miscellany">
+        <li>
+        <a href="/blog/" data-tooltip="Musings and miscellany" aria-current="page">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -461,7 +476,7 @@
 
   <section class="background" data-size="page">
     <h1 id="blog">
-<i class="icon fa-solid fa-feather-pointed"></i>Blog</h1>
+<i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>Blog</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -479,9 +494,13 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 -->
 
 <div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
-    <i class="icon fa-solid fa-magnifying-glass"></i>
+  <label for="search-input" class="sr-only">Search items on this page</label>
+  <input id="search-input" type="text" class="search-input" placeholder="Search items on this page" aria-describedby="search-instructions">
+  <span id="search-instructions" class="sr-only">
+    Type to search. Use quotes for exact phrases. Use "tag: tagname" to filter by tag.
+  </span>
+  <button disabled data-tooltip="Clear search" aria-label="clear search">
+    <i class="icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
   </button>
 </div>
 
@@ -551,7 +570,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -563,14 +582,14 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>October 08, 2025</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -622,14 +641,14 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 08, 2025</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -681,14 +700,14 @@ Congratulations to Jason Gallant, on receiving the 2025 Mentorship Award from th
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 08, 2025</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -739,7 +758,7 @@ Congratulations to Rita Gorsuch, on receiving first place in the Cell Biology, G
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -751,14 +770,14 @@ Congratulations to Rita Gorsuch, on receiving first place in the Cell Biology, G
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 05, 2025</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -808,7 +827,7 @@ Congratulations to Rita Gorsuch, on receiving first place in the Cell Biology, G
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -820,14 +839,14 @@ Congratulations to Rita Gorsuch, on receiving first place in the Cell Biology, G
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>February 12, 2025</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -879,7 +898,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -891,14 +910,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>July 08, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -948,7 +967,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -960,14 +979,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>May 06, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1017,7 +1036,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1029,14 +1048,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>May 03, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1086,7 +1105,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1098,14 +1117,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 16, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1155,7 +1174,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1167,14 +1186,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 16, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1224,7 +1243,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1236,14 +1255,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 16, 2021</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1294,7 +1313,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1306,14 +1325,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>May 26, 2020</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1363,7 +1382,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1375,14 +1394,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 18, 2020</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1435,7 +1454,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1447,14 +1466,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>October 27, 2019</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1507,7 +1526,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1519,14 +1538,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>September 05, 2018</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1576,7 +1595,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1588,14 +1607,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>August 30, 2018</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1645,7 +1664,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1657,14 +1676,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 01, 2018</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1714,7 +1733,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1726,14 +1745,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>February 15, 2018</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1783,7 +1802,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1795,14 +1814,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>January 01, 2018</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1853,7 +1872,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1865,14 +1884,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>May 16, 2017</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -1930,7 +1949,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -1942,14 +1961,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>January 23, 2017</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2000,7 +2019,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2012,14 +2031,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>September 17, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2047,7 +2066,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
       
       
-      <p data-search="Dr. Jason Gallant was a featured guest on the Mid-Michigan Pet Expert Talk Show, hosted by Lee Cohen and Rick Preuss. The show was broadcast on September 12th, 2015 on 1320 AM WILS Lansing, but the interview segments are also posted here. Thanks Rick and Lee for a great conversation Be sure to like the Mid-Michigan Pet show on Facebook">
+      <p data-search="Dr. Jason Gallant was a featured guest on the Mid-Michigan Pet Expert Talk Show, hosted by Lee Cohen and Rick Preuss. The show was broadcast on September 12th, 2015 on 1320 AM WILS Lansing, but the interview segments are also posted here. Thanks Rick and Lee for a great conversation Audio transcript: Interview with Dr. Jason Gallant on the Mid-Michigan Pet Expert Talk Show, hosted by Lee Cohen and Rick Preuss, broadcast September 12, 2015 on 1320 AM WILS Lansing. Radio interview with Dr. Jason Gallant September 12, 2015 Be sure to like the Mid-Michigan Pet show on Facebook">
         
 
       </p>
@@ -2073,7 +2092,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2085,14 +2104,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>August 04, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2142,7 +2161,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2154,14 +2173,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>May 05, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2219,7 +2238,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2231,14 +2250,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 10, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2292,7 +2311,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2304,14 +2323,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>February 26, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2361,7 +2380,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2373,14 +2392,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>February 10, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2430,7 +2449,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2442,14 +2461,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>January 15, 2015</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2504,7 +2523,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2516,14 +2535,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>December 12, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2585,7 +2604,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2597,14 +2616,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>September 08, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2654,7 +2673,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2666,14 +2685,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 29, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2723,7 +2742,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2735,14 +2754,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 21, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2770,7 +2789,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
       
       
-      <p data-search="Dr. Gallant was the guest for the Mid-Michigan Pet Show on Saturday April 19th We had a long conversation about the Gallant lab s research on electric fish, as well as the genetics behind Glofish. Click play below to listen to the full interview, or go to this link to find it and other great interviews in the archives Many thanks to Rick Preuss and Lee Cohen for a very enjoyable time on the Radio Be sure to like the Mid-Michigan Pet show on Facebook">
+      <p data-search="Dr. Gallant was the guest for the Mid-Michigan Pet Show on Saturday April 19th We had a long conversation about the Gallant lab s research on electric fish, as well as the genetics behind Glofish. Click play below to listen to the full interview, or go to this link to find it and other great interviews in the archives Audio transcript summary: Dr. Gallant discusses the lab s research on electric fish and the genetics behind Glofish. Full interview available at the Mid-Michigan Pet Show archives. Radio interview with Dr. Jason Gallant discussing electric fish research and Glofish genetics April 19, 2014 Many thanks to Rick Preuss and Lee Cohen for a very enjoyable time on the Radio Be sure to like the Mid-Michigan Pet show on Facebook">
         
 
       </p>
@@ -2796,7 +2815,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2808,14 +2827,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 05, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2869,7 +2888,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2881,14 +2900,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 24, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -2942,7 +2961,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -2954,14 +2973,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 23, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3003,7 +3022,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3015,14 +3034,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 22, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3076,7 +3095,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3088,14 +3107,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 21, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3149,7 +3168,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3161,14 +3180,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>March 19, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3196,7 +3215,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
       
       
-      <p data-search="Monica and I have been hard at work getting Brienomyrus brachyistius to breed again in the lab we ve been having great success with getting them spawning Over the past month, we ve had hundreds of eggs. Here is a video of the main event occurring several hours after nightfall, which occurs at 19:00 hours. While this is a 30 second clip, preliminary analysis of our video shows that the pair spawns repeatedly over the ensuing 10-15 minutes, and likely many more times out of frame.For some reason, the pair really seems to like breeding next to this partition reasons unknown at the moment.The next morning, we found about 20-40 eggs in the tank. Later in the week, we had more than 150 If you d like to see some nice photos of the results, check out my earlier blog post.Some neat behavior for sure, more soon to follow">
+      <p data-search="Monica and I have been hard at work getting Brienomyrus brachyistius to breed again in the lab we ve been having great success with getting them spawning Over the past month, we ve had hundreds of eggs. Here is a video of the main event occurring several hours after nightfall, which occurs at 19:00 hours. While this is a 30 second clip, preliminary analysis of our video shows that the pair spawns repeatedly over the ensuing 10-15 minutes, and likely many more times out of frame. Video description: A 30-second clip showing a pair of Brienomyrus brachyistius electric fish spawning in a laboratory tank, recorded several hours after nightfall. The fish repeatedly spawn near a tank partition over a 10-15 minute period. Video showing Brienomyrus brachyistius spawning behavior. The pair spawns repeatedly over 10-15 minutes near a tank partition.For some reason, the pair really seems to like breeding next to this partition reasons unknown at the moment.The next morning, we found about 20-40 eggs in the tank. Later in the week, we had more than 150 If you d like to see some nice photos of the results, check out my earlier blog post.Some neat behavior for sure, more soon to follow">
         Monica and I have been hard at work getting Brienomyrus brachyistius to breed again in the lab– we’ve been having great success with getting them spawning!  Over the past month, we’ve had hundreds of eggs.  Here is a video of the “main event” occurring several hours after nightfall, which occurs at 19:00 hours.  While this is a 30 second clip, preliminary analysis of our video shows that the pair spawns repeatedly over the ensuing 10-15 minutes, and likely many more times out of frame.
 
       </p>
@@ -3222,7 +3241,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3234,14 +3253,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>February 03, 2014</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3292,7 +3311,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3304,14 +3323,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 11, 2013</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3361,7 +3380,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3373,14 +3392,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>April 11, 2013</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3431,7 +3450,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3443,14 +3462,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>August 30, 2012</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3500,7 +3519,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3512,14 +3531,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>August 29, 2012</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3569,7 +3588,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
       
       
         <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
+          <i class="icon fa-solid fa-feather-pointed" aria-hidden="true"></i>
           <span>jason gallant</span>
         </span>
       
@@ -3581,14 +3600,14 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
 
   
     <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
+      <i class="icon fa-regular fa-calendar" aria-hidden="true"></i>
       <span>August 28, 2012</span>
     </span>
   
 
   
     <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
+      <i class="icon fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
       <span>February 09, 2026</span>
     </span>
   
@@ -3634,76 +3653,78 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -3714,7 +3735,7 @@ Congratulations to Alyssa Saunders, PhD student in the MSU Electric Fish Lab, on
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>

@@ -371,6 +371,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -379,12 +380,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -400,49 +401,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
+        <li>
         <a href="/research/" data-tooltip="Published works">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/outreach/" data-tooltip="Outreach and Education">
           Education
         </a>
+        </li>
       
     
       
-        <a href="/team/" data-tooltip="About our team">
+        <li>
+        <a href="/team/" data-tooltip="About our team" aria-current="page">
           Team
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -461,7 +476,7 @@
 
   <section class="background" data-size="page">
     <h1 id="team">
-<i class="fas fa-users"></i>Team</h1>
+<i class="fas fa-users" aria-hidden="true"></i>Team</h1>
 
 <p>The MSU Electric Fish Lab values curiosity about the natural world, independent inquiry, critical thinking, science literacy, and accessible, open science, as well as strong prioritization of mentorship at all career levels. Since opening in 2013, we’ve built a large and productive lab group with many talented students, postdocs, and technicians from around the world, including Canada, Costa Rica, France, England and the US. Many of our students come from diverse economic backgrounds, and groups typically underrepresented in STEM fields. A particular point of pride is our outstanding group of undergraduates, many of whom have gone on to pursue graduate research positions at other institutions.</p>
 
@@ -469,7 +484,7 @@
   <a href="/members/jason.html" class="portrait" data-style="" aria-label="Dr. Jason Gallant">
     
 
-    <img src="/images/jason.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/jason.png" class="portrait-image" alt="Dr. Jason Gallant portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -491,7 +506,7 @@
   <a href="/members/arely.html" class="portrait" data-style="" aria-label="Arely Cruz-Perez">
     
 
-    <img src="/images/arely.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/arely.jpeg" class="portrait-image" alt="Arely Cruz-Perez portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -513,7 +528,7 @@
   <a href="/members/rosie.html" class="portrait" data-style="" aria-label="Rosie Bills">
     
 
-    <img src="/images/rosie.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/rosie.jpeg" class="portrait-image" alt="Rosie Bills portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -534,10 +549,10 @@
 <div class="portrait-wrapper">
   <a href="/members/alyssa.html" class="portrait" data-style="" aria-label="Alyssa Green">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/alyssa.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/alyssa.jpg" class="portrait-image" alt="Alyssa Green portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -558,10 +573,10 @@
 <div class="portrait-wrapper">
   <a href="/members/ella.html" class="portrait" data-style="" aria-label="Ella Morrow">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/ella.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/ella.jpg" class="portrait-image" alt="Ella Morrow portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -582,10 +597,10 @@
 <div class="portrait-wrapper">
   <a href="/members/karim.html" class="portrait" data-style="" aria-label="Karim Larbi">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/karim.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/karim.jpeg" class="portrait-image" alt="Karim Larbi portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -606,10 +621,10 @@
 <div class="portrait-wrapper">
   <a href="/members/swarnima.html" class="portrait" data-style="" aria-label="Swarnima Mukherjee">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/swarnima.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/swarnima.jpg" class="portrait-image" alt="Swarnima Mukherjee portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -628,13 +643,13 @@
 </div>
 
 <h1 class="center" id="alumni">
-<i class="fas fa-users"></i>Alumni</h1>
+<i class="fas fa-users" aria-hidden="true"></i>Alumni</h1>
 
 <div class="portrait-wrapper">
   <a href="/members/jared.html" class="portrait" data-style="small" aria-label="Jared Thompson">
     
 
-    <img src="/images/jared.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/jared.png" class="portrait-image" alt="Jared Thompson portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -652,7 +667,7 @@
   <a href="/members/kat.html" class="portrait" data-style="small" aria-label="Katherine Shaw">
     
 
-    <img src="/images/kat.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/kat.png" class="portrait-image" alt="Katherine Shaw portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -670,7 +685,7 @@
   <a href="/members/mary.html" class="portrait" data-style="small" aria-label="Mary Gardella">
     
 
-    <img src="/images/mary.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/mary.jpeg" class="portrait-image" alt="Mary Gardella portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -692,7 +707,7 @@
   <a href="/members/monica.html" class="portrait" data-style="small" aria-label="Monica Lucas">
     
 
-    <img src="/images/monica.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/monica.png" class="portrait-image" alt="Monica Lucas portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -710,7 +725,7 @@
   <a href="/members/nick.html" class="portrait" data-style="small" aria-label="Nick Vieder">
     
 
-    <img src="/images/nick.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/nick.png" class="portrait-image" alt="Nick Vieder portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -732,7 +747,7 @@
   <a href="/members/rita.html" class="portrait" data-style="small" aria-label="Rita Gorsuch">
     
 
-    <img src="/images/rita.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/rita.jpeg" class="portrait-image" alt="Rita Gorsuch portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -754,7 +769,7 @@
   <a href="/members/ryan.html" class="portrait" data-style="small" aria-label="Ryan Taylor">
     
 
-    <img src="/images/ryan.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/ryan.png" class="portrait-image" alt="Ryan Taylor portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -771,10 +786,10 @@
 <div class="portrait-wrapper">
   <a href="/members/david.html" class="portrait" data-style="small" aria-label="Dr. David Luecke">
     
-      <i class="icon fa-solid fa-glasses"></i>
+      <i class="icon fa-solid fa-glasses" aria-hidden="true"></i>
     
 
-    <img src="/images/david.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/david.png" class="portrait-image" alt="Dr. David Luecke portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -795,10 +810,10 @@
 <div class="portrait-wrapper">
   <a href="/members/mau.html" class="portrait" data-style="small" aria-label="Dr. Mauricio Losilla">
     
-      <i class="icon fa-solid fa-glasses"></i>
+      <i class="icon fa-solid fa-glasses" aria-hidden="true"></i>
     
 
-    <img src="/images/mauricio.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/mauricio.png" class="portrait-image" alt="Dr. Mauricio Losilla portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -819,10 +834,10 @@
 <div class="portrait-wrapper">
   <a href="/members/sophie.html" class="portrait" data-style="small" aria-label="Dr. Sophie Picq">
     
-      <i class="icon fa-solid fa-glasses"></i>
+      <i class="icon fa-solid fa-glasses" aria-hidden="true"></i>
     
 
-    <img src="/images/sophie.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/sophie.png" class="portrait-image" alt="Dr. Sophie Picq portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -843,10 +858,10 @@
 <div class="portrait-wrapper">
   <a href="/members/will.html" class="portrait" data-style="small" aria-label="Dr. Will Pitchers">
     
-      <i class="icon fa-solid fa-glasses"></i>
+      <i class="icon fa-solid fa-glasses" aria-hidden="true"></i>
     
 
-    <img src="/images/will.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/will.png" class="portrait-image" alt="Dr. Will Pitchers portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -867,10 +882,10 @@
 <div class="portrait-wrapper">
   <a href="/members/jonah.html" class="portrait" data-style="small" aria-label="Jonah Branding">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/jonah.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/jonah.jpg" class="portrait-image" alt="Jonah Branding portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -891,10 +906,10 @@
 <div class="portrait-wrapper">
   <a href="/members/lauren.html" class="portrait" data-style="small" aria-label="Dr. Lauren Koenig">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/lauren.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/lauren.png" class="portrait-image" alt="Dr. Lauren Koenig portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -915,10 +930,10 @@
 <div class="portrait-wrapper">
   <a href="/members/savvas.html" class="portrait" data-style="small" aria-label="Dr. Savvas Constantinou">
     
-      <i class="icon fa-solid fa-graduation-cap"></i>
+      <i class="icon fa-solid fa-graduation-cap" aria-hidden="true"></i>
     
 
-    <img src="/images/savvas.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/savvas.png" class="portrait-image" alt="Dr. Savvas Constantinou portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -939,10 +954,10 @@
 <div class="portrait-wrapper">
   <a href="/members/adam.html" class="portrait" data-style="small" aria-label="Adam Gleichman">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/adam.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/adam.png" class="portrait-image" alt="Adam Gleichman portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -963,10 +978,10 @@
 <div class="portrait-wrapper">
   <a href="/members/aisha.html" class="portrait" data-style="small" aria-label="Aisha Narayan">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/aisha.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/aisha.png" class="portrait-image" alt="Aisha Narayan portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -987,10 +1002,10 @@
 <div class="portrait-wrapper">
   <a href="/members/allie.html" class="portrait" data-style="small" aria-label="Allie Kwang">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/allie.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/allie.png" class="portrait-image" alt="Allie Kwang portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1011,10 +1026,10 @@
 <div class="portrait-wrapper">
   <a href="/members/angelina.html" class="portrait" data-style="small" aria-label="Angelina Sdao">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/angelina.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/angelina.png" class="portrait-image" alt="Angelina Sdao portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1035,10 +1050,10 @@
 <div class="portrait-wrapper">
   <a href="/members/carly.html" class="portrait" data-style="small" aria-label="Carly Ader">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/carly.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/carly.jpg" class="portrait-image" alt="Carly Ader portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1059,10 +1074,10 @@
 <div class="portrait-wrapper">
   <a href="/members/christian.html" class="portrait" data-style="small" aria-label="Christian Roberts">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/christian.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/christian.jpeg" class="portrait-image" alt="Christian Roberts portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1083,10 +1098,10 @@
 <div class="portrait-wrapper">
   <a href="/members/douglas.html" class="portrait" data-style="small" aria-label="Douglas Maldonado-Torres">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/douglas.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/douglas.png" class="portrait-image" alt="Douglas Maldonado-Torres portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1107,10 +1122,10 @@
 <div class="portrait-wrapper">
   <a href="/members/elise.html" class="portrait" data-style="small" aria-label="Elise Straub">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/elise.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/elise.png" class="portrait-image" alt="Elise Straub portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1131,10 +1146,10 @@
 <div class="portrait-wrapper">
   <a href="/members/emily.html" class="portrait" data-style="small" aria-label="Emily Parker">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/emily.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/emily.png" class="portrait-image" alt="Emily Parker portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1155,10 +1170,10 @@
 <div class="portrait-wrapper">
   <a href="/members/emma.html" class="portrait" data-style="small" aria-label="Emma Elferdink">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/emma.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/emma.png" class="portrait-image" alt="Emma Elferdink portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1179,10 +1194,10 @@
 <div class="portrait-wrapper">
   <a href="/members/fernando.html" class="portrait" data-style="small" aria-label="Fernando Fernandez">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/fernando.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/fernando.png" class="portrait-image" alt="Fernando Fernandez portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1203,10 +1218,10 @@
 <div class="portrait-wrapper">
   <a href="/members/hope.html" class="portrait" data-style="small" aria-label="Hope Healey">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/hope.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/hope.png" class="portrait-image" alt="Hope Healey portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1227,10 +1242,10 @@
 <div class="portrait-wrapper">
   <a href="/members/justin.html" class="portrait" data-style="small" aria-label="Justin Rucinski">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/justin.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/justin.png" class="portrait-image" alt="Justin Rucinski portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1251,10 +1266,10 @@
 <div class="portrait-wrapper">
   <a href="/members/kristen.html" class="portrait" data-style="small" aria-label="Kristen Lounsbury">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/kristen.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/kristen.png" class="portrait-image" alt="Kristen Lounsbury portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1275,10 +1290,10 @@
 <div class="portrait-wrapper">
   <a href="/members/lexi.html" class="portrait" data-style="small" aria-label="Lexi Nadolsky">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/lexi.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/lexi.png" class="portrait-image" alt="Lexi Nadolsky portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1299,10 +1314,10 @@
 <div class="portrait-wrapper">
   <a href="/members/nicole.html" class="portrait" data-style="small" aria-label="Nicole Thompson">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/nicole.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/nicole.png" class="portrait-image" alt="Nicole Thompson portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1323,10 +1338,10 @@
 <div class="portrait-wrapper">
   <a href="/members/nikki.html" class="portrait" data-style="small" aria-label="Nicole Robichaud">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/nikki.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/nikki.png" class="portrait-image" alt="Nicole Robichaud portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1347,10 +1362,10 @@
 <div class="portrait-wrapper">
   <a href="/members/sarah.html" class="portrait" data-style="small" aria-label="Sarah Sam">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/sarah.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/sarah.png" class="portrait-image" alt="Sarah Sam portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1371,10 +1386,10 @@
 <div class="portrait-wrapper">
   <a href="/members/sergio.html" class="portrait" data-style="small" aria-label="Sergio Acuna">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/sergio.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/sergio.png" class="portrait-image" alt="Sergio Acuna portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1395,10 +1410,10 @@
 <div class="portrait-wrapper">
   <a href="/members/sophia.html" class="portrait" data-style="small" aria-label="Sophia Sdao">
     
-      <i class="icon fa-solid fa-user-graduate"></i>
+      <i class="icon fa-solid fa-user-graduate" aria-hidden="true"></i>
     
 
-    <img src="/images/sophia.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/sophia.png" class="portrait-image" alt="Sophia Sdao portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1419,10 +1434,10 @@
 <div class="portrait-wrapper">
   <a href="/members/colin.html" class="portrait" data-style="small" aria-label="Colin Diesh">
     
-      <i class="icon fa-solid fa-code"></i>
+      <i class="icon fa-solid fa-code" aria-hidden="true"></i>
     
 
-    <img src="/images/colin.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/colin.png" class="portrait-image" alt="Colin Diesh portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1446,76 +1461,78 @@
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -1526,7 +1543,7 @@
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>

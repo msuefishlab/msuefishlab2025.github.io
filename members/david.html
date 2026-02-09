@@ -317,6 +317,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -325,12 +326,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -346,49 +347,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
+        <li>
         <a href="/research/" data-tooltip="Published works">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/outreach/" data-tooltip="Outreach and Education">
           Education
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/team/" data-tooltip="About our team">
           Team
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -411,10 +426,10 @@
 <div class="portrait-wrapper">
   <a class="portrait" data-style="" aria-label="Dr. David Luecke">
     
-      <i class="icon fa-solid fa-glasses"></i>
+      <i class="icon fa-solid fa-glasses" aria-hidden="true"></i>
     
 
-    <img src="/images/david.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/david.png" class="portrait-image" alt="Dr. David Luecke portrait photo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -442,7 +457,7 @@
 
   <div class="button-wrapper">
     <a class="button" href="mailto:lueckeda@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
         <span>Email</span>
       
@@ -456,6 +471,8 @@
 
 </div>
 
+
+<h1>Dr. David Luecke</h1>
 
 <p>David is a postdoc working on the evolution and development of electric organs.  He did his graduate work on the evolution of limb size in <em>Drosophila prolongata</em> in the Population Biology Graduate Group at UC  Davis, under the supervision of Artyom Kopp.</p>
 
@@ -486,76 +503,78 @@
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -566,7 +585,7 @@
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>

@@ -371,6 +371,7 @@
 </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
 
 
@@ -379,12 +380,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="true">
+<header role="banner" class="background" style="--image: url('')" data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="MSU Electric Fish Lab logo">
         
       </span>
     
@@ -400,49 +401,63 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
+    <ul class="nav-list">
     
     
       
+        <li>
         <a href="/research/" data-tooltip="Published works">
           Publications
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/projects/" data-tooltip="See what we're working on">
           Projects
         </a>
+        </li>
       
     
       
-        <a href="/outreach/" data-tooltip="Outreach and Education">
+        <li>
+        <a href="/outreach/" data-tooltip="Outreach and Education" aria-current="page">
           Education
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/team/" data-tooltip="About our team">
           Team
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
+        </li>
       
     
       
+        <li>
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
+        </li>
       
     
+    </ul>
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" role="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -467,7 +482,7 @@
 -->
 
 <h1 id="-teaching--outreach">
-<i class="fas fa-graduation-cap"></i> Teaching &amp; Outreach</h1>
+<i class="fas fa-graduation-cap" aria-hidden="true"></i> Teaching &amp; Outreach</h1>
 
 <p>I teach with a simple goal: help students become curious, self-directed biologists—not memorize “a pile of sundry facts.” That means inquiry-based courses, plenty of low-stakes practice on the way to big, meaningful products (papers, projects), and regular, individualized feedback (including 1–2 required one-on-ones in writing-intensive classes). I also build project-based labs that develop conceptual, procedural, and “how we know” (epistemological) skills.</p>
 
@@ -522,17 +537,17 @@
 </ul>
 
 <h1 id="-outreach">
-<i class="fas fa-bullhorn"></i> Outreach</h1>
+<i class="fas fa-bullhorn" aria-hidden="true"></i> Outreach</h1>
 
 <figure class="outreach-media">
-  <video controls="" poster="/images/outreach_rig.jpg" width="600">
+  <video controls="" poster="/images/outreach_rig.jpg" width="600" aria-label="Closeup of our outreach rig filmed at an East Lansing Science Night">
     <source src="/images/outreach_rig.mov" type="video/quicktime"></source>
     <p>Your browser does not support the video tag. You can
       <a href="/images/outreach_rig.mov">download the video here</a>.
     </p>
   </video>
   <figcaption>
-    Here’s a closeup of our outreach rig (filmed at an East Lansing Science Night).
+    Here's a closeup of our outreach rig (filmed at an East Lansing Science Night). The video shows our portable electric fish demonstration equipment that converts electric fish signals into light and sound for educational presentations.
   </figcaption>
 </figure>
 
@@ -580,76 +595,78 @@
     
 
 
-<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
+<footer role="contentinfo" class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="mailto:jgallant@msu.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
+      <i class="icon fa-solid fa-envelope" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://scholar.google.com/citations?user=Jason%20Gallant" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
+      <i class="icon fa-brands fa-google" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://github.com/msuefishlab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
+      <i class="icon fa-brands fa-github" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
       
       
-      
+      <li>
 
 
 
   <div class="button-wrapper">
     <a class="button" href="https://twitter.com/jasongallant" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
+      <i class="icon fa-brands fa-twitter" aria-hidden="true"></i>
       
     </a>
   </div>
 
-
+</li>
     
-  </div>
+    </ul>
+  </nav>
 
   <div>
     © 2026
@@ -660,7 +677,7 @@
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode">
 </footer>
 
   </body>
