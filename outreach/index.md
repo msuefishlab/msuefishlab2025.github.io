@@ -43,7 +43,7 @@ Training scientists is a core part of my job and our lab culture. Since arriving
   <video controls poster="/images/outreach_rig.jpg" aria-label="Closeup of our outreach rig filmed at an East Lansing Science Night">
     <source src="/images/outreach_rig.mov" type="video/quicktime">
     <p>Your browser does not support the video tag. You can
-      <a href="/images/outreach_rig.mov">download the video here</a>.
+      <a href="/images/outreach_rig.mov">download the outreach rig video</a>.
     </p>
   </video>
   <figcaption>

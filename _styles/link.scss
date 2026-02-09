@@ -11,6 +11,14 @@ a:hover {
   color: var(--text);
 }
 
+a:visited {
+  color: var(--secondary);
+}
+
+a:active {
+  color: var(--accent);
+}
+
 a:not([href]) {
   color: var(--text);
 }

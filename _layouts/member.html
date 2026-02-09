@@ -10,7 +10,12 @@ layout: default
   {% for link in page.links %}
     {% assign key = link[0] %}
     {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
+    {% if key == "email" %}
+      {% assign email_tooltip = "Email " | append: page.name | default: page.title %}
+      {% include button.html type=key link=value style="bare" tooltip=email_tooltip %}<br>
+    {% else %}
+      {% include button.html type=key link=value style="bare" %}<br>
+    {% endif %}
   {% endfor %}
 </div>
 

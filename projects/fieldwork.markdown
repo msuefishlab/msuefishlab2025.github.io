@@ -7,6 +7,8 @@ title: Fieldwork
 tags: []
 
 ---
+# Fieldwork
+
 ## **Gabon 2019**
 
 ![](/images/makokou.jpg)

@@ -12,7 +12,7 @@
         width: {{ include.width | default: "auto" }};
         max-height: {{ include.height | default: "unset" }};
       "
-      alt="{{ include.caption | default: "figure image" | regex_strip }}"
+      alt="{{ include.alt | default: include.caption | default: "figure image" | regex_strip }}"
       loading="lazy"
       {% include fallback.html %}
     >

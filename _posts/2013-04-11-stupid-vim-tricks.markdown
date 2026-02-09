@@ -26,7 +26,7 @@ mkdir ~/.vim
 mkdir ~/.vim/colors
 `
 
-Download the color scheme you like... sublime text is closely emulated by [](https://github.com/tomasr/molokai).  Then, going back to my .vimrc file:
+Download the color scheme you like... sublime text is closely emulated by [Molokai](https://github.com/tomasr/molokai).  Then, going back to my .vimrc file:
 
 `
 set mouse=a

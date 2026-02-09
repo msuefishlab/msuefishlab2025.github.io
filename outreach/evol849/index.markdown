@@ -7,8 +7,9 @@ title: Genome Evolution – April 28th and April 30th
 wordpress_id: 1436
 ---
 
-### PLB/ZOL 849 Evolutionary Biology Spring 2015
-Genome Evolution – April 28th and April 30th
+# Genome Evolution – April 28th and April 30th
+
+## PLB/ZOL 849 Evolutionary Biology Spring 2015
 Instructor: Jason Gallant
 
 

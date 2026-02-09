@@ -5,30 +5,102 @@ author_profile: true
 date: 2015-09-30 13:47:26+00:00
 title: MSU NGS Methods Reading Group - Fall 2015
 ---
-{: .text-center}
-<ul>
-<h3>
-<ul>Presentation Schedule</ul>
-<ul>Fall 2015</ul>
-<ul>Monday 2PM in BEACON Seminar Room (Room 1455A BPS)</ul>
-</h3>
-</ul>
 
-|**_Date_**	|**_Name_**|	**_Topic_**|	**_Student Respondent_**|
-|-------|------|-----|-----|
-|_September 14_	| Organizational Meeting		|||
-|_September 21_	| Amanda	| [A Preview of NGS Data + General Bioinformatics	](/msu_ngs/2015-10-05-sequencing-how-does-that-work)| Amanda |
-|_September 28_	| Meznah	| Clustering/Data Mining + Search|	Scott |
-|_October 5_	| Dharanya	| [Variant Analysis](/msu_ngs/2015-10-12-variant-analysis-fantastic-snps-and-where-to-find-them)	| Ethan |
-|_October 12_	| Mitch, Roshan, Shairah|	[Metagenomics/Amplicon-Based Seq](/msu_ngs/2015-10-19-metagenomics-and-amplicon-based-sequencing0)	| Roshan |
-|_October 19_	| Mau and Abhijna|	[RNA-Seq : An Introduction](/msu_ngs/2015-10-25-an-introduction-to-rna-seq-and-transcriptome-assembly) |	Abhijna |
-|_October 26_	| Mark Reimers	| [Single-Cell RNA-seq](/msu_ngs/2015-11-02-single-cell-rnaseq-with-focus-on-brain) |	Mau |
-|_November 2_	| Kevin (others?)	| [Methylation and Chromatin](/msu_ngs/2015-11-12-methylation-chromatin-and-chip-seq) |	Mitch
-|_November 9_	| Dan (others?)| 	[RAD-Seq](/msu_ngs/2015-11-16-rad-seq)	| Jeffrey |
-|_November 16_	| Meznah (Kevin Childs?)| 	[Genome Assembly & Annotation](/msu_ngs/2015-11-17-genome-annotation)	| Savvas |
-|_November 23_	| Thanksgiving Week |	No Meeting	| |
-|_November 30_	| Amanda (Others?) | Data Analysis Pitfalls| 	Sheriff |
-|_December 7_	| Will Pitchers	| Platforms & Data of the Future |	Volunteer |
+# MSU NGS Methods Reading Group - Fall 2015
+
+{: .text-center}
+<div>
+<h2>Presentation Schedule</h2>
+<p>Fall 2015</p>
+<p>Monday 2PM in BEACON Seminar Room (Room 1455A BPS)</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th scope="col"><strong><em>Date</em></strong></th>
+<th scope="col"><strong><em>Name</em></strong></th>
+<th scope="col"><strong><em>Topic</em></strong></th>
+<th scope="col"><strong><em>Student Respondent</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>September 14</em></td>
+<td colspan="3">Organizational Meeting</td>
+</tr>
+<tr>
+<td><em>September 21</em></td>
+<td>Amanda</td>
+<td><a href="/msu_ngs/2015-10-05-sequencing-how-does-that-work">A Preview of NGS Data + General Bioinformatics</a></td>
+<td>Amanda</td>
+</tr>
+<tr>
+<td><em>September 28</em></td>
+<td>Meznah</td>
+<td>Clustering/Data Mining + Search</td>
+<td>Scott</td>
+</tr>
+<tr>
+<td><em>October 5</em></td>
+<td>Dharanya</td>
+<td><a href="/msu_ngs/2015-10-12-variant-analysis-fantastic-snps-and-where-to-find-them">Variant Analysis</a></td>
+<td>Ethan</td>
+</tr>
+<tr>
+<td><em>October 12</em></td>
+<td>Mitch, Roshan, Shairah</td>
+<td><a href="/msu_ngs/2015-10-19-metagenomics-and-amplicon-based-sequencing0">Metagenomics/Amplicon-Based Seq</a></td>
+<td>Roshan</td>
+</tr>
+<tr>
+<td><em>October 19</em></td>
+<td>Mau and Abhijna</td>
+<td><a href="/msu_ngs/2015-10-25-an-introduction-to-rna-seq-and-transcriptome-assembly">RNA-Seq : An Introduction</a></td>
+<td>Abhijna</td>
+</tr>
+<tr>
+<td><em>October 26</em></td>
+<td>Mark Reimers</td>
+<td><a href="/msu_ngs/2015-11-02-single-cell-rnaseq-with-focus-on-brain">Single-Cell RNA-seq</a></td>
+<td>Mau</td>
+</tr>
+<tr>
+<td><em>November 2</em></td>
+<td>Kevin (others?)</td>
+<td><a href="/msu_ngs/2015-11-12-methylation-chromatin-and-chip-seq">Methylation and Chromatin</a></td>
+<td>Mitch</td>
+</tr>
+<tr>
+<td><em>November 9</em></td>
+<td>Dan (others?)</td>
+<td><a href="/msu_ngs/2015-11-16-rad-seq">RAD-Seq</a></td>
+<td>Jeffrey</td>
+</tr>
+<tr>
+<td><em>November 16</em></td>
+<td>Meznah (Kevin Childs?)</td>
+<td><a href="/msu_ngs/2015-11-17-genome-annotation">Genome Assembly & Annotation</a></td>
+<td>Savvas</td>
+</tr>
+<tr>
+<td><em>November 23</em></td>
+<td colspan="3">Thanksgiving Week - No Meeting</td>
+</tr>
+<tr>
+<td><em>November 30</em></td>
+<td>Amanda (Others?)</td>
+<td>Data Analysis Pitfalls</td>
+<td>Sheriff</td>
+</tr>
+<tr>
+<td><em>December 7</em></td>
+<td>Will Pitchers</td>
+<td>Platforms & Data of the Future</td>
+<td>Volunteer</td>
+</tr>
+</tbody>
+</table>
 
 **Guidelines:**
 
