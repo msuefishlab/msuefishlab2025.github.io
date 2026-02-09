@@ -10,11 +10,13 @@
 {% endfor %}
 
 <div class="post_excerpt">
-  {% assign url = post.url | default: "" %}
-  {% assign title = post.title | default: "" %}
+  {% assign url = post.url %}
+  {% assign title = post.title | default: "Untitled course" %}
+  {% if url and title %}
   <p>
     <a href="{{ url | relative_url }}">{{ title }}</a>
   </p>
+  {% endif %}
 
   {%
     include post-info.html

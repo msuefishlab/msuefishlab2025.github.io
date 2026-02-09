@@ -31,9 +31,13 @@
 
     if (!target) return;
     const offset = document.querySelector("header").clientHeight || 0;
+
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     window.scrollTo({
       top: target.getBoundingClientRect().top + window.scrollY - offset,
-      behavior: "smooth",
+      behavior: prefersReducedMotion ? "auto" : "smooth",
     });
   };
 

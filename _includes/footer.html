@@ -2,6 +2,7 @@
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
 <footer
+  role="contentinfo"
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
@@ -15,13 +16,15 @@
     </div>
   -->
 
-  <div>
+  <nav role="navigation" aria-label="Social media links">
+    <ul class="footer-links">
     {% for link in site.links %}
       {% assign key = link[0] %}
       {% assign value = link[1] %}
-      {% include button.html type=key text="" link=value style="bare" %}
+      <li>{% include button.html type=key text="" link=value style="bare" %}</li>
     {% endfor %}
-  </div>
+    </ul>
+  </nav>
 
   <div>
     &copy; {{ site.time | date: "%Y" }}
@@ -37,6 +40,5 @@
     class="dark-toggle"
     data-tooltip="Dark mode"
     aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
   >
 </footer>

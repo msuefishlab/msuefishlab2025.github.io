@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-# <i class="fas fa-microscope"></i>Research Publications
+# <i class="fas fa-microscope" aria-hidden="true"></i>Research Publications
 
 {% include search-box.html %}
 

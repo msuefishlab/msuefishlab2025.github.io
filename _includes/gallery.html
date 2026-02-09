@@ -17,6 +17,8 @@
     {%- assign tooltip = include[tooltip] -%}
     {%- assign link = "link" | append: i -%}
     {%- assign link = include[link] -%}
+    {%- assign alt = "alt" | append: i -%}
+    {%- assign alt = include[alt] -%}
 
     {%- if image -%}
       <a
@@ -27,7 +29,7 @@
         <img
           src="{{ image | relative_url }}"
           loading="lazy"
-          alt=""
+          alt="{{ alt | default: '' }}"
         />
       </a>
     {%- endif -%}

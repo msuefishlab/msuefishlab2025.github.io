@@ -7,7 +7,7 @@ nav:
 
 {% include section.html %}
 
-# <i class="fas fa-graduation-cap"></i> Teaching & Outreach
+# <i class="fas fa-graduation-cap" aria-hidden="true"></i> Teaching & Outreach
 
 I teach with a simple goal: help students become curious, self-directed biologists—not memorize “a pile of sundry facts.” That means inquiry-based courses, plenty of low-stakes practice on the way to big, meaningful products (papers, projects), and regular, individualized feedback (including 1–2 required one-on-ones in writing-intensive classes). I also build project-based labs that develop conceptual, procedural, and “how we know” (epistemological) skills.
 
@@ -37,17 +37,17 @@ Training scientists is a core part of my job and our lab culture. Since arriving
 - Explicit training in research design, analysis, and communication.
 - A welcoming lab that values diverse backgrounds and experiences.
 
-# <i class="fas fa-bullhorn"></i> Outreach
+# <i class="fas fa-bullhorn" aria-hidden="true"></i> Outreach
 
 <figure class="outreach-media">
-  <video controls poster="/images/outreach_rig.jpg" width="600">
+  <video controls poster="/images/outreach_rig.jpg" width="600" aria-label="Closeup of our outreach rig filmed at an East Lansing Science Night">
     <source src="/images/outreach_rig.mov" type="video/quicktime">
     <p>Your browser does not support the video tag. You can
       <a href="/images/outreach_rig.mov">download the video here</a>.
     </p>
   </video>
   <figcaption>
-    Here’s a closeup of our outreach rig (filmed at an East Lansing Science Night).
+    Here's a closeup of our outreach rig (filmed at an East Lansing Science Night). The video shows our portable electric fish demonstration equipment that converts electric fish signals into light and sound for educational presentations.
   </figcaption>
 </figure>
 

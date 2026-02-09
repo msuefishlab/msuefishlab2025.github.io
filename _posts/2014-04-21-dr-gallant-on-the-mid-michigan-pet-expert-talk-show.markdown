@@ -12,7 +12,13 @@ tags: [news, outreach]
 Dr. Gallant was the guest for the [Mid-Michigan Pet Show](http://1320wils.com/page.php?page_id=48097) on Saturday April 19th!  We had a long conversation about the Gallant lab's research on electric fish, as well as the genetics behind Glofish.  Click "play" below to listen to the full interview, or go to this [link](http://1320wils.com/page.php?page_id=48099) to find it and other great interviews in the archives!
 
 
-<video class="video_float_right" src="/images/mmpegshow.mp3" controls></video>
+<figure>
+  <audio class="video_float_right" controls aria-label="Dr. Jason Gallant interview on Mid-Michigan Pet Expert Talk Show, April 19, 2014">
+    <source src="/images/mmpegshow.mp3" type="audio/mpeg">
+    <p>Audio transcript summary: Dr. Gallant discusses the lab's research on electric fish and the genetics behind Glofish. Full interview available at the <a href="http://1320wils.com/page.php?page_id=48099">Mid-Michigan Pet Show archives</a>.</p>
+  </audio>
+  <figcaption>Radio interview with Dr. Jason Gallant discussing electric fish research and Glofish genetics (April 19, 2014)</figcaption>
+</figure>
 
 Many thanks to Rick Preuss and Lee Cohen for a very enjoyable time on the Radio!
 

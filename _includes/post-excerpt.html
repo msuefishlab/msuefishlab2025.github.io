@@ -30,7 +30,7 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url }}">{{ title }}</a>
+      <a href="{{ url }}">{{ title | default: "Untitled post" }}</a>
 
       {%
         include post-info.html

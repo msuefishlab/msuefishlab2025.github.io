@@ -4,7 +4,7 @@
 {% elsif page.title %}
   {% assign title = page.title %}
 {% else %}
-  {% assign title = nil %}
+  {% assign title = "Page" %}
 {% endif %}
 
 {% assign title = title | xml_escape %}

@@ -197,19 +197,33 @@
 
   // when user types into search box
   const debouncedRunSearch = debounce(runSearch, 1000);
-  window.onSearchInput = (target) => {
-    debouncedRunSearch(target.value);
-    updateUrl(target.value);
+  const onSearchInput = (event) => {
+    debouncedRunSearch(event.target.value);
+    updateUrl(event.target.value);
   };
 
   // when user clears search box with button
-  window.onSearchClear = () => {
+  const onSearchClear = () => {
     runSearch();
     updateUrl();
   };
 
+  // attach event listeners to search boxes
+  const attachSearchListeners = () => {
+    const boxes = document.querySelectorAll(searchBoxSelector);
+    for (const box of boxes) {
+      const input = box.querySelector("input");
+      const button = box.querySelector("button");
+      if (input) input.addEventListener("input", onSearchInput);
+      if (button) button.addEventListener("click", onSearchClear);
+    }
+  };
+
   // after page loads
-  window.addEventListener("load", searchFromUrl);
+  window.addEventListener("load", () => {
+    attachSearchListeners();
+    searchFromUrl();
+  });
   // after tags load
   window.addEventListener("tagsfetched", searchFromUrl);
 }

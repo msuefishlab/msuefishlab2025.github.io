@@ -3,14 +3,14 @@
 
 // colors
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
+  --primary: #0074b7; /* Darker blue for better contrast (WCAG AA compliant) */
+  --secondary: #5cb3e6;
   --text: #000000;
   --background: #ffffff;
   --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
+  --light-gray: #d0d0d0;
+  --gray: #666666; /* Darker gray for better contrast */
+  --dark-gray: #333333;
   --overlay: #00000020;
 }
 [data-dark="true"] {
@@ -51,4 +51,16 @@
   --rounded: 3px;
   --shadow: 0 0 10px 0 var(--overlay);
   --transition: 0.2s ease;
+}
+
+// Respect user's motion preferences for accessibility
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -11,20 +11,14 @@
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
-      <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
-        {% endif %}
-        class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
-      >
+      <div class="citation-image">
         <img
           src="{{ citation.image | relative_url | uri_escape }}"
           alt="{{ citation.title | default: "citation image" | regex_strip }}"
           loading="lazy"
           {% include fallback.html %}
         >
-      </a>
+      </div>
     {% endif %}
 
     <div class="citation-text">
@@ -43,9 +37,9 @@
       <div
         class="citation-authors"
         {% if citation.authors.size > 10 %}
+          aria-label="Full author list: {{ citation.authors | join: ", " | xml_escape }}"
           data-tooltip="{{ citation.authors | join: ", " | xml_escape }}"
         {% endif %}
-        tabindex="0"
       >
         {{
           citation.authors

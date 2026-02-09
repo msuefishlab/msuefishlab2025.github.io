@@ -5,7 +5,7 @@ nav:
   tooltip: See what we're working on
 ---
 
-# <i class="fas fa-tools"></i>Current Projects
+# <i class="fas fa-tools" aria-hidden="true"></i>Current Projects
 
 We use electric fish as a natural laboratory to understand how genomes give rise to new traits, how evolution repeats itself, and how biodiversity emerges. Our work spans genes, signals, organs, and reproduction.
 

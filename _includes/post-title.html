@@ -10,9 +10,11 @@
 {% endfor %}
 
 <div class="post_title">
-  {% assign url = post.url | default: "" %}
-  {% assign title = post.title | default: "" %}
+  {% assign url = post.url %}
+  {% assign title = post.title | default: "Untitled post" %}
+  {% if url and title %}
   <p>
     <a href="{{ url | relative_url }}">{{ title }}</a>
   </p>
+  {% endif %}
 </div>

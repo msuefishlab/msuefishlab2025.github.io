@@ -5,7 +5,7 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# <i class="fas fa-envelope"></i>Contact
+# <i class="fas fa-envelope" aria-hidden="true"></i>Contact
 
 Our lab is part of the [Department of Integrative Biology](https://integrativebiology.natsci.msu.edu), at [Michigan State University](http://www.msu.edu).
 We are located on the 1st floor of [Giltner Hall](https://maps.msu.edu/interactive/index.php?location=6NHQ).
@@ -50,7 +50,7 @@ We are located on the 1st floor of [Giltner Hall](https://maps.msu.edu/interacti
 {% endcapture %}
 {% capture col2 %}
 
-### <i class="fas fa-mail-bulk"></i>Mailing Address
+### <i class="fas fa-mail-bulk" aria-hidden="true"></i>Mailing Address
 
 Dr. Jason Gallant  
 Department of Integrative Biology  

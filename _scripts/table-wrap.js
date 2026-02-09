@@ -10,6 +10,10 @@
       // create wrapper with scroll
       const wrapper = document.createElement("div");
       wrapper.style.overflowX = "auto";
+      wrapper.className = "table-wrapper";
+      wrapper.setAttribute("tabindex", "0");
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("aria-label", "Scrollable table");
 
       // undo css force-text-wrap
       table.style.overflowWrap = "normal";

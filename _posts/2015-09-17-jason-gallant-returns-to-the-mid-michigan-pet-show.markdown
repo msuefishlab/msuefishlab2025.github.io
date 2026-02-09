@@ -11,6 +11,12 @@ tags: [news, outreach]
 
 Dr. Jason Gallant was a featured guest on the Mid-Michigan Pet Expert Talk Show, hosted by Lee Cohen and Rick Preuss.  The show was broadcast on September 12th, 2015 on 1320 AM WILS Lansing, but the interview segments are also posted here.  Thanks Rick and Lee for a great conversation!
 
-<video class="video_float_right" src="/images/mm_petshow_91215.mp3" controls></video>
+<figure>
+  <audio class="video_float_right" controls aria-label="Dr. Jason Gallant interview on Mid-Michigan Pet Expert Talk Show, September 12, 2015">
+    <source src="/images/mm_petshow_91215.mp3" type="audio/mpeg">
+    <p>Audio transcript: Interview with Dr. Jason Gallant on the Mid-Michigan Pet Expert Talk Show, hosted by Lee Cohen and Rick Preuss, broadcast September 12, 2015 on 1320 AM WILS Lansing.</p>
+  </audio>
+  <figcaption>Radio interview with Dr. Jason Gallant (September 12, 2015)</figcaption>
+</figure>
 
 Be sure to "like" the Mid-Michigan Pet show on [Facebook](https://www.facebook.com/MMPETS)!

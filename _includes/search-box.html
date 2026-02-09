@@ -1,15 +1,19 @@
 <div class="search-box">
+  <label for="search-input" class="sr-only">Search items on this page</label>
   <input
+    id="search-input"
     type="text"
     class="search-input"
-    oninput="onSearchInput(this)"
     placeholder="Search items on this page"
+    aria-describedby="search-instructions"
   />
+  <span id="search-instructions" class="sr-only">
+    Type to search. Use quotes for exact phrases. Use "tag: tagname" to filter by tag.
+  </span>
   <button
     disabled
     data-tooltip="Clear search"
     aria-label="clear search"
-    onclick="onSearchClear()"
   >
     {% include icon.html icon="fa-solid fa-magnifying-glass" %}
   </button>

@@ -23,3 +23,23 @@ footer a:hover {
 footer .icon {
   font-size: var(--xl);
 }
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+}
