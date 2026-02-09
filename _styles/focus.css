@@ -1,0 +1,43 @@
+/* Global focus styles for accessibility */
+/* Remove default focus outline and add custom visible focus indicator */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Specific focus styles for interactive elements */
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--background), 0 0 0 6px var(--primary);
+}
+
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.dark-toggle:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+.nav-toggle:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=focus.css.map */

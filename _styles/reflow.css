@@ -1,0 +1,109 @@
+/* WCAG 2.1 AA 1.4.10 Reflow - Prevent horizontal scrolling on small screens */
+/* Ensure body never overflows horizontally */
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure main content respects viewport width */
+main {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure all sections respect viewport width */
+section {
+  overflow-x: hidden;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Make all block-level elements respect viewport */
+div,
+article,
+figure,
+blockquote {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent iframes and embeds from overflowing */
+iframe,
+embed,
+object {
+  max-width: 100% !important;
+}
+
+/* Make Twitter embeds responsive */
+.twitter-tweet,
+.twitter-tweet-rendered {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure embedded videos are responsive */
+video {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Make figures responsive */
+figure {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure img,
+figure video {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* Ensure pre and code blocks don't overflow viewport */
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+/* Wrap long URLs and text */
+p,
+li,
+td,
+th {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Allow long URLs to break */
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Ensure tables are scrollable on small screens */
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 640px) {
+  table {
+    font-size: 0.875rem;
+  }
+}
+/* Make images in content responsive */
+.outreach-media img,
+.outreach-media video {
+  max-width: 100% !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+/*# sourceMappingURL=reflow.css.map */
