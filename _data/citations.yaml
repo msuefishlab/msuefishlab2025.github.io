@@ -1,5 +1,20 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.64898/2026.01.14.699493
+  title: The Genomic Basis of Electric Signal Diversity
+  authors:
+  - Jason R. Gallant
+  - Sophie Picq
+  - Lauren Koenig
+  - "Nestor Ngoua Aba\u2019a"
+  - Franck Nzigou
+  - Hans Kevin Mipounga
+  publisher: openRxiv
+  date: '2026-01-14'
+  link: https://doi.org/hbkd3h
+  orcid: 0000-0002-6528-090X
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s44358-025-00098-x
   title: "Biologists should embrace Earth\u2019s biodiversity as a library of solutions"
   authors:
@@ -34,8 +49,8 @@
   - Reproduction
   - Signal Evolution
 - id: doi:10.1093/g3journal/jkac331
-  title: Molecular evolution of the ependymin-related gene <i>epdl2</i> in African
-    weakly electric fish
+  title: "Molecular evolution of the ependymin-related gene\n                    <i>epdl2</i>\n\
+    \                    in African weakly electric fish"
   authors:
   - Mauricio Losilla
   - Jason R Gallant
@@ -111,8 +126,9 @@
   - type: journal
     link: images/losilla_et_al_2020.pdf
 - id: doi:10.1111/evo.13953
-  title: Genetic drift does not sufficiently explain patterns of electric signal variation
-    among populations of the mormyrid electric fish<i>Paramormyrops kingsleyae</i>
+  title: "Genetic drift does not sufficiently explain patterns of electric signal\
+    \ variation among populations of the mormyrid electric fish\n                \
+    \    <i>Paramormyrops kingsleyae</i>"
   authors:
   - Sophie Picq
   - Joshua Sperling
