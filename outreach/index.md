@@ -40,7 +40,7 @@ Training scientists is a core part of my job and our lab culture. Since arriving
 # <i class="fas fa-bullhorn" aria-hidden="true"></i> Outreach
 
 <figure class="outreach-media">
-  <video controls poster="/images/outreach_rig.jpg" width="600" aria-label="Closeup of our outreach rig filmed at an East Lansing Science Night">
+  <video controls poster="/images/outreach_rig.jpg" aria-label="Closeup of our outreach rig filmed at an East Lansing Science Night">
     <source src="/images/outreach_rig.mov" type="video/quicktime">
     <p>Your browser does not support the video tag. You can
       <a href="/images/outreach_rig.mov">download the video here</a>.
@@ -55,8 +55,7 @@ Public outreach is a huge component of our work. You’ll find us around Michiga
 
 <figure class="outreach-media">
   <img src="/images/mau_savvas_outreach.jpeg"
-       alt="Grad students teaching K-12 teachers how to incorporate electric fish in their lessons"
-       width="600">
+       alt="Grad students teaching K-12 teachers how to incorporate electric fish in their lessons">
   <figcaption>
     Our awesome grad students teaching K-12 teachers how to incorporate electric fish in their lessons.
   </figcaption>
@@ -65,9 +64,9 @@ Public outreach is a huge component of our work. You’ll find us around Michiga
 Several members of the lab are active in training teachers through the Kellogg Biological Station’s <a href="http://kbsgk12project.kbs.msu.edu">GK-12 Program</a>. Shown here are <a href="/people/mau/">Mau</a> and <a href="/people/savvas/">Savvas</a> leading a recent session. We’re building and sharing open materials teachers can drop straight into their classrooms—especially useful for middle-school physics when discussing “forms of energy.” (Fun fact: electric fishes helped inspire the voltaic pile.)
 
 <figure class="outreach-media">
-  <img src="/images/kat_outreach.jpeg" alt="Kat leading outreach: pin the electrocyte on the fish" width="600">
+  <img src="/images/kat_outreach.jpeg" alt="Kat leading outreach: pin the electrocyte on the fish">
   <figcaption>
-    Kat led a great outreach event featuring “Pin the electrocyte on the electric fish.”
+    Kat led a great outreach event featuring "Pin the electrocyte on the electric fish."
   </figcaption>
 </figure>
 

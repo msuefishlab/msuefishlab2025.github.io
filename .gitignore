@@ -11,4 +11,8 @@ package.json
 package-lock.json
 yarn.lock
 node_modules
+<<<<<<< Updated upstream
 _cite/.cache/*
+=======
+.claude
+>>>>>>> Stashed changes

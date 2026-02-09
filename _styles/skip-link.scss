@@ -1,0 +1,22 @@
+---
+---
+
+/* Skip to main content link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 1em;
+  background-color: var(--background);
+  color: var(--text);
+  text-decoration: none;
+  border: 2px solid var(--primary);
+  font-weight: var(--bold);
+}
+
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}

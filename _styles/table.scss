@@ -5,6 +5,10 @@ table {
   margin: 40px auto;
   border-collapse: collapse;
   overflow-wrap: anywhere;
+  max-width: 100%;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 th {
