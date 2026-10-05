@@ -1,28 +1,28 @@
-- name: Origins of Electric Organs
+- title: Origins of Electric Organs
   group: featured
   image: images/evodevo.png
   link: images/Gallant2019_Chapter_TheEvolutionAndDevelopmentOfEl.pdf
   description: How does evolution repeatedly transform muscle into electricity-producing cells? We investigate the genomic and developmental toolkit that enables electric organs to evolve again and again.
 
-- name: Diversity of Electric Signals
+- title: Diversity of Electric Signals
   group: featured
   image: images/paramormyrops.png
   link: images/picqetal2020.pdf
   description: African mormyrid fishes use diverse electrical pulses to communicate and mate. We study the genetic and ecological forces behind this diversity—and how it drives speciation.
 
-- name: From Genes to Behavior
+- title: From Genes to Behavior
   group: featured
   image: images/efishbros.png
   link: https://efishgenomics.integrativebiology.msu.edu
   description: What DNA changes shape new behaviors? Using genomics, transcriptomics, and CRISPR tools, we link genetic variation to the physiology and behavior of electric fish.
 
-- name: Reproductive Evolution
+- title: Reproductive Evolution
   group: featured
   image: images/spawn.png
   link: images/koenigandgallant2021.pdf
   description: Mormyrids are the only vertebrates with immotile, aflagellate sperm. We are uncovering the genetic basis of this unusual adaptation and its evolutionary consequences.
 
-- name: Fieldwork in Africa
+- title: Fieldwork in Africa
   group: featured
   image: images/iboundji.jpg
   link: projects/fieldwork.html
