@@ -17,6 +17,33 @@
   width: 250px;
 }
 
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card-link:visited,
+.card-link:active {
+  color: var(--text);
+}
+
+.card-link:hover .card-title {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.card-link:focus-visible {
+  outline-offset: -4px;
+}
+
+.card-image {
+  width: 100%;
+}
+
 .card-image img {
   aspect-ratio: 3/2;
   object-fit: cover;
