@@ -1,7 +1,7 @@
 ---
 name: Karim Larbi
 image: images/karim.jpeg
-group:
+group: alumni
 description: M.S. Student
 role: phd
 links:

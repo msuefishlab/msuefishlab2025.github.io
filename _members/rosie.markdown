@@ -1,7 +1,7 @@
 ---
 name: Rosie Bills
 image: images/rosie.jpeg
-group:
+group: alumni
 description: Fish Care Specialist
 role: technician
 links:
