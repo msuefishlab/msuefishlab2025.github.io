@@ -4,6 +4,9 @@ description: An easy-to-use, flexible website template for labs, with automatic 
 logo: images/efishlab_logo_cropped.png
 baseurl: /
 
+# GoatCounter analytics code (dashboard: https://msuefishlab.goatcounter.com)
+goatcounter: msuefishlab
+
 # site social media and other links
 links:
   email: jgallant@msu.edu
